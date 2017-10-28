@@ -1,11 +1,14 @@
 body {
     background-color: black;
+	animation-name: example;
+    animation-duration: 4s;
 }
-
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: black;}
+}
 h1{
 	color: white;
-	animation-duration: 3s;
-    animation-name: slidein;
 }
 
 content {
