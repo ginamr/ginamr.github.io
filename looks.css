@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    background-color: #8fc951;
+	/* #8fc951 = (143,201,81) RGB */
 	animation-name: background;
     animation-duration: 2s;
 }
