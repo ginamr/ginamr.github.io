@@ -4,6 +4,8 @@ body {
 
 h1{
 	color: white;
+	animation-duration: 3s;
+    animation-name: slidein;
 }
 
 content {
