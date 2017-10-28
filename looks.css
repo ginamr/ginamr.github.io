@@ -1,5 +1,9 @@
+*{
+	font:"Times New Roman"
+}
+
 body {
-    background-color: #8fc951;
+    background-color: white;
 	/* #8fc951 = (143,201,81) RGB */
 	animation-name: background;
     animation-duration: 2s;
