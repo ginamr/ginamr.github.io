@@ -1,11 +1,26 @@
+/* keyframes animations */
+@keyframes background {
+	from {background-color: black;}
+	to {background-color: white;}
+}
+
+@keyframes bubbles {
+	from {background-color: #FFFFFF;}
+	to {background-color: #2ecc71;}
+}
+
+/* css classes */
 .center {
 	margin: auto;
 	width: 60%;
 	padding: 10px;
 }
 
+/* css */
 *{
-	font:"Times New Roman";
+	/*font:"Helvetica";*/
+	font-family: Helvetica;
+	color: white;
 }
 
 p{
@@ -14,19 +29,15 @@ p{
 }
 
 body {
-	background-color: white;
+	background-color: #6C7A89;
 	/* #8fc951 = (143,201,81) RGB */
 	animation-name: background;
 	animation-duration: 2s;
 }
 
-@keyframes background {
-	from {background-color: black;}
-	to {background-color: white;}
-}
-
 h1{
 	color: black;
+	font-size: 2.5em;
 }
 
 ul{
@@ -45,13 +56,17 @@ li a {
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
+	margin-left: 1em;
 	text-decoration: none;
 	border-radius: 10em;
+	background-color: #FFFFFF;
 }
 
 li a:hover {
 	background-color: #2ecc71;
 	border-radius: 10em;
+	animation-name: bubbles;
+	animation-duration: 0.5s;
 } 
 
 img {
