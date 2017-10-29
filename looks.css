@@ -10,34 +10,22 @@
 }
 
 /* css classes */
-.center {
-	margin: auto;
-	width: 60%;
-	padding: 10px;
-}
+
 
 /* css */
-*{
-	/*font:"Helvetica";*/
-	font-family: Helvetica;
-	color: white;
-}
-
-p{
-	margin-left: 1em;
-	margin-top: 1em;
-}
-
 body {
 	background-color: #6C7A89;
-	/* #8fc951 = (143,201,81) RGB */
+	/* #8fc951 = (143,201,81) RGB
+	   #6C7A89 gray #03C9A9 green
+	*/
 	animation-name: background;
 	animation-duration: 2s;
 }
 
 h1{
+	font-family: Helvetica;
 	color: black;
-	font-size: 2.5em;
+	font-size: 3em;
 }
 
 ul{
@@ -72,4 +60,25 @@ li a:hover {
 img {
 	padding: 5px;
 	width: 50px;
+}
+
+/*p,h2,h3{
+	font-family: Helvetica;
+	color: white;
+	background-color: #03C9A9;
+	margin: 0em;
+}*/
+
+header{
+	margin: 0em;
+	padding: 0em;
+}
+
+section, footer{
+	padding: 2em;
+	font-family: Helvetica;
+	color: white;
+	background-color: #03C9A9;
+	margin: 1em;
+	border-radius: 4em;
 }
