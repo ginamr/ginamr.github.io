@@ -8,11 +8,15 @@
     50% {transform: rotate(-1deg);}
     100% {transform: rotate(1deg);}
 }
-/* css classes */
-
 
 /* css */
+*{
+	font-family: Helvetica;
+	color: white;
+}
+
 body {
+	width: 100%;
 	background-color: #03C9A9;
 	/* #8fc951 = (143,201,81) RGB
 	   #6C7A89 gray #03C9A9 green
@@ -21,14 +25,28 @@ body {
 	animation-duration: 3s;
 }
 
+header{
+	padding: 1em;
+	margin: 0em;
+	font-size: 1.5em;
+}
+
 h1{
-	font-family: Helvetica;
-	color: white;
-	font-size: 3em;
 	animation-name: wiggle;
 	animation-duration: 2s;
 }
 
+section, footer{
+	padding: 1em;
+	width: 100% auto;
+	margin: 2em auto;
+	font-size: 1em;
+	padding: 2em auto;
+	background-color: #12294f;
+	border-radius: 2em;
+}
+
+/* styling for list of links */
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -58,7 +76,32 @@ li a:hover {
 	animation-duration: 0.5s;
 } 
 
-img {
+
+#page-link {
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 1em 1em;
+	text-decoration: none;
+	border-radius: 1em;
+	background-color: black;
+	overflow: auto;
+}
+
+#pagelink-img{
+	float: left;
+	display: block;
+	padding: 1em;
+    max-width: 33%;
+	min-width: 8em;
+    height: auto;
+}
+
+#read-more {
+	float:right;
+}
+
+#icon {
 	padding: 5px;
 	width: 50px;
 }
@@ -70,16 +113,3 @@ img {
 	margin: 0em;
 }*/
 
-header{
-	margin: 0em;
-	padding: 0em;
-}
-
-section, footer{
-	padding: 2em;
-	font-family: Helvetica;
-	color: white;
-	background-color: #12294f;
-	margin: 1em;
-	border-radius: 4em;
-}

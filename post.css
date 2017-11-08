@@ -1,0 +1,22 @@
+.post-container {
+    margin: 1em 1em 0em 0em;  
+    border: 0.5em solid #2ecc71;
+    overflow: auto
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+    display: block;
+	height: 100% auto;
+	width: 100% auto;
+}
+.post-content {
+    margin-left: 10em;
+}
+.post-title {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 1em;
+    background: #2ecc71;
+}

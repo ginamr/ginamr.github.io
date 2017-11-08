@@ -2,11 +2,13 @@
 <html>
 <head>
   <link rel="stylesheet" href="looks.css">
-  	<title>Gina Marie Robinson</title>
+  <link rel="stylesheet" href="mediaQueries.css">
+  <link rel="stylesheet" href="post.css">
+  <title>Gina Marie Robinson</title>
 </head>
 <body>
 	<header>
-		<img src="gr.svg" alt="GR" style="float: right;">
+		<img id="icon" src="Assets/gr.svg" alt="GR" style="float: right;">
 	</header>
 	
 	<section style="clear:both">
@@ -17,12 +19,12 @@
 		<ul>
 			<li>
 				<a href="https://www.linkedin.com/in/robinsongina">
-				<img src="linkedin.png" alt="LinkedIn">
+				<img id="icon" src="Assets/linkedin.png" alt="LinkedIn">
 				</a>
 			</li>
 			<li>
 				<a href="https://github.com/ginamr">
-				<img src="github.png" alt="Github">
+				<img id="icon" src="Assets/github.png" alt="Github">
 				</a>
 			</li>
 		</ul>
@@ -30,17 +32,44 @@
 	</section>
 	
 	<section>
-	<header>
-		<h2>My Projects</h2>
-	</header>
-	<h3>Full Stack ECommerce Web Site @UCI</h3>
-	<p> this is me talking about Fablix. </p>
-	<h3>Video Game Vector Graphics @UCI</h3>
-	<p> this is me talking about video game project vector graphics. </p>
-	<h3>Data Analytics @Microsoft</h3>
-	<p> this is me talking about microsoft project 1. </p>
-	<h3>Automated Query Plan Analysis @Microsoft</h3>
-	<p> this is me talking about microsoft project 2. </p>
+		<header>
+			<h2>My Projects</h2>
+		</header>
+		
+		<div id="page-link" class="post-container">
+			<h3 class="post-title">Full Stack ECommerce Web Site @UCI</h3>
+			<img class="post-thumb" id="pagelink-img" src="Assets/fablix.svg" alt="Fablix">
+			<div class="post-content">
+				<h4>Project:</h4>
+				<p>Fablix - A Full Stack ECommerce Website</p>
+				<h4>My Role:</h4>
+				<p>Database Administrator (DBA) and Developer</p>
+				<h4>Tools:</h4>
+				<p>MySQL Workbench, Command Line</p>
+				<a id="read-more" href="fablix.html">Read more...
+				</a>
+			</div>
+		</div>
+		
+		<div id="page-link">
+			<h3>Video Game Vector Graphics @UCI</h3>
+			<img id="pagelink-img" src="Assets/BailysBeadsCharacters.svg" alt="Baily's Beads">
+			<h4>Project:</h4>
+			<p>Baily's Beads - A Solar Eclipse 2D Video Game</p>
+			<h4>My Role:</h4>
+			<p>Developer and Asset Creator</p>
+			<h4>Tools:</h4>
+			<p>Unity, Adobe After Effects/Illustrator/Premier Pro</p>
+			<a id="read-more" href="bailys-beads.html">Read more...</a>
+		</div>
+		
+		<h3>Data Analytics @Microsoft</h3>
+		<a href="data-analytics.html">Data Analytics @Microsoft</a>
+		<p> this is me talking about microsoft project 1. </p>
+		
+		<h3>Automated Query Plan Analysis @Microsoft</h3>
+		<a href="automated-query-plan-analysis.html">Automated Query Plan Analysis @Microsoft</a>
+		<p> this is me talking about microsoft project 2. </p>
 	</section>
 	
 	<footer>
