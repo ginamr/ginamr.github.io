@@ -13,7 +13,7 @@
 
 /* css */
 body {
-	background-color: #12294f;
+	background-color: #03C9A9;
 	/* #8fc951 = (143,201,81) RGB
 	   #6C7A89 gray #03C9A9 green
 	*/
@@ -79,7 +79,7 @@ section, footer{
 	padding: 2em;
 	font-family: Helvetica;
 	color: white;
-	background-color: #03C9A9;
+	background-color: #12294f;
 	margin: 1em;
 	border-radius: 4em;
 }
