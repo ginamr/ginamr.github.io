@@ -1,7 +1,8 @@
 .post-container {
-    margin: 1em 1em 0em 0em;  
-    border: 0.5em solid #2ecc71;
-    overflow: auto
+    margin: 0.5em 0.5em 1em 0em;  
+    border: 0.5em solid #0067c5;
+    overflow: auto;
+	font-size: 50%;
 }
 .post-thumb {
     float: left
@@ -13,10 +14,13 @@
 }
 .post-content {
     margin-left: 10em;
+	padding: 0.5em;
 }
 .post-title {
     font-weight: bold;
-    font-size: 200%;
-    padding: 1em;
-    background: #2ecc71;
+    font-size: 250%;
+	text-align: center;
+    padding: 0.25em;
+    background: #0067c5;
+	border: 0.1em solid white;
 }

@@ -1,6 +1,6 @@
 /* Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
-    body {
+    /*body {
         background-color: lightgreen;
     }
 	
@@ -10,12 +10,12 @@
 
 	section, footer{
 		font-size: 3em;
-	}
+	}*/
 }
 
 /* Medium Devices, Desktops */
 @media screen and (min-width: 992px) {
-    body {
+    /*body {
         background-color: green;
     }
 	
@@ -26,12 +26,12 @@
 	section, footer{
 		font-size: 2em;
 		padding: 3em;
-	}
+	}*/
 }
 
 /* Large Devices, Wide Screens */
 @media screen and (min-width: 1200px) {
-    body {
+    /*body {
         background-color: white;
     }
 		
@@ -41,5 +41,5 @@
 
 	section, footer{
 		font-size: 1em;
-	}
+	}*/
 }

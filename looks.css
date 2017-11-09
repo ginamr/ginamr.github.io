@@ -16,6 +16,7 @@
 }
 
 body {
+	overflow: auto;
 	width: 100%;
 	background-color: #03C9A9;
 	/* #8fc951 = (143,201,81) RGB
@@ -24,6 +25,10 @@ body {
 	animation-name: background;
 	animation-duration: 3s;
 }
+
+/*article{
+	font-size: 1.5em;
+}*/
 
 header{
 	padding: 1em;
@@ -41,7 +46,6 @@ section, footer{
 	width: 100% auto;
 	margin: 2em auto;
 	font-size: 1em;
-	padding: 2em auto;
 	background-color: #12294f;
 	border-radius: 2em;
 }
@@ -99,11 +103,27 @@ li a:hover {
 
 #read-more {
 	float:right;
+	padding:2em;
 }
 
 #icon {
 	padding: 5px;
 	width: 50px;
+}
+
+#selfie{
+	display: block;
+	padding: 1em;
+	max-width: 33%;
+	min-width: 8em;
+    height: auto;
+	float: center;
+	text-align:center;
+	margin: 0 auto;
+}
+
+#copyright{
+	text-align:center;
 }
 
 /*p,h2,h3{
