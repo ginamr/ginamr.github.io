@@ -81,7 +81,7 @@ li a:hover {
 } 
 
 
-#page-link {
+.page-link {
 	display: block;
 	color: white;
 	text-align: left;
@@ -92,7 +92,7 @@ li a:hover {
 	overflow: auto;
 }
 
-#pagelink-img{
+.pagelink-img{
 	float: left;
 	display: block;
 	padding: 1em;
@@ -101,17 +101,17 @@ li a:hover {
     height: auto;
 }
 
-#read-more {
+.read-more {
 	float:right;
 	padding:2em;
 }
 
-#icon {
+.icon {
 	padding: 5px;
 	width: 50px;
 }
 
-#selfie{
+.selfie{
 	display: block;
 	padding: 1em;
 	max-width: 33%;
@@ -122,7 +122,7 @@ li a:hover {
 	margin: 0 auto;
 }
 
-#copyright{
+.copyright{
 	text-align:center;
 }
 

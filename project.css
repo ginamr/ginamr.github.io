@@ -1,22 +1,27 @@
-.post-container {
+.project-container {
     margin: 0.5em 0.5em 1em 0em;  
     border: 0.5em solid #0067c5;
     overflow: auto;
 	font-size: 50%;
 }
-.post-thumb {
-    float: left
+.project-thumb {
+    float: left;
 }
-.post-thumb img {
+.project-thumb {
     display: block;
-	height: 100% auto;
-	width: 100% auto;
+	max-width: 33%;
+	min-width: 8em;
+    height: auto;
+	/*height: 100% auto;
+	width: 100% auto;*/
 }
-.post-content {
-    margin-left: 10em;
+.project-content {
+    margin-left: 15em;
 	padding: 0.5em;
+	/*border: 0.5em solid yellow;*/
+	text-align: center;	
 }
-.post-title {
+.project-title {
     font-weight: bold;
     font-size: 250%;
 	text-align: center;
