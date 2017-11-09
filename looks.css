@@ -23,7 +23,7 @@ body {
 	max-width: 100%;
 	overflow-x: hidden;
 
-	background-color: #03C9A9;
+	background-color: #3498db;/*#03C9A9;*/
 	/* #8fc951 = (143,201,81) RGB
 	   #6C7A89 gray #03C9A9 green
 	*/
@@ -33,7 +33,6 @@ body {
 header{
 	padding: 1em;
 	margin: 0em;
-	#font-size: 1.5em;
 }
 h1{
 	font-family: 'Permanent Marker', cursive;
@@ -62,7 +61,7 @@ section, footer{
 	padding: 1em;
 	width: 100% auto;
 	margin: 2em;
-	background-color: #12294f;
+	background-color: #2980b9;
 	border-radius: 2em;
 }
 

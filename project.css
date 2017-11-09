@@ -1,15 +1,11 @@
 .project-container {
-    /*margin: 0.5em 0.5em 1em 0em;*/
-    margin: 0em 0em 0em 0em;  	
 	background-color: black;
-	text-align: left;
-	padding: 1em 1em;
+	padding: 0.5em 0.5em;
 	text-decoration: none;
-	border-radius: 1em;
+	/*border-radius: 1em;*/
 	overflow: hidden;
 }
 .project-title {
-    /*font-weight: bold;*/
 	text-align: center;
     padding: 0.25em;
     background: #0067c5;
@@ -30,37 +26,29 @@ img {
 	height: auto;
 }
 .project-content {
-	/*display: block;*/
-	margin: 1em auto 1em auto;
+	/*margin: 1em auto 1em auto;*/
 	text-align: left;
-	/*font-size: 1em;*/	
-	max-width: 70%;
+	/*max-width: 70%;*/
 	min-width: 8em;
 }
 .project-name{
-		/*overflow-wrap: normal;*/
-
 	background-color: #1f3a93;
-	padding:1em;
-	margin:0.5em;
+	padding-left:1em;
+	margin-top:0.5em;
 	border: 0.1em solid #bbc3cc;
 	border-radius: 1em;
 }
 .project-role{
-		/*overflow-wrap: normal;*/
-
 	background-color: #3a539b;
-	padding:1em;
-	margin:0.5em;
+	padding-left:1em;
+	margin-top:0.5em;
 	border: 0.1em solid #bbc3cc;
 	border-radius: 1em;
 }
 .project-tools{
-		/*overflow-wrap: normal;*/
-
 	background-color: #4b77be;
-	padding:1em;
-	margin:0.5em;
+	padding-left:1em;
+	margin-top:0.5em;
 	border: 0.1em solid #bbc3cc;
 	border-radius: 1em;
 }
