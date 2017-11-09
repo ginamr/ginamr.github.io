@@ -1,8 +1,9 @@
-.project-container {
+#project-container {
     margin: 0.5em 0.5em 1em 0em;  
     border: 0.5em solid #0067c5;
     overflow: auto;
 	font-size: 50%;
+	background-color: black;
 }
 .project-thumb {
     float: left;
@@ -16,10 +17,14 @@
 	width: 100% auto;*/
 }
 .project-content {
-    margin-left: 15em;
+	float: center;
+    margin-left: 33%;
 	padding: 0.5em;
 	/*border: 0.5em solid yellow;*/
-	text-align: center;	
+	text-align: left;
+	font-size: 2em;	
+	max-width: 70%;
+	min-width: 8em;
 }
 .project-title {
     font-weight: bold;
