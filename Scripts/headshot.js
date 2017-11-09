@@ -1,4 +1,4 @@
-function tellSize() {
+/*function tellSize() {
 	//var img = document.getElementById('iconDimensions');
 	//alert(img.width + 'x' + img.height);
 	//alert("hi");
@@ -6,4 +6,4 @@ function tellSize() {
 	alert(test);
 	
 };
-window.onload = tellSize();
+window.onload = tellSize();*/

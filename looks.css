@@ -11,17 +11,18 @@
 
 /* main css */
 *{
-	/*font-family: Helvetica;*/
 	color: white;
 	font-family: 'Libre Baskerville', sans-serif; font-weight: 400; 
 }
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
+	max-width: 100%;
 }
 body {
-	/*width: 100%;
-	overflow-x: hidden;*/
+	max-width: 100%;
+	overflow-x: hidden;
+
 	background-color: #03C9A9;
 	/* #8fc951 = (143,201,81) RGB
 	   #6C7A89 gray #03C9A9 green
