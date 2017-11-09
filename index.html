@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="Scripts/headshot.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Concert+One|Libre+Baskerville|Permanent+Marker" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="looks.css">
-  <link rel="stylesheet" href="mediaQueries.css">
-  <link rel="stylesheet" href="project.css">
-  <title>Gina Marie Robinson</title>
+	<link rel="stylesheet" href="looks.css">
+	<link rel="stylesheet" href="project.css">
+	<link rel="stylesheet" href="mediaQueries.css">
+	<title>Gina Marie Robinson</title>
 </head>
 <body>
 	<header>
@@ -15,20 +17,30 @@
 	<section style="clear:both">
 		<header>
 			<h1>Hello World, I'm Gina Robinson.</h1>
+			<div class="bio">
+				<p>I am a Senior studying Computer Science at the University of California, Irvine. In addition to being a software engineer, I love poetry, photography, and film. I am very excited to learn all I can and am looking forward to creating Virtual Reality worlds and Augmented Reality applications.</p>		
+			</div>
 		</header>
 		<!-- start of links -->	
 		<ul>
-			<li>
+			
+			<li id="iconDimensions">
 				<a href="https://www.linkedin.com/in/robinsongina">
-				<img class="icon" src="Assets/linkedin.png" alt="LinkedIn">
+				<img  class="icon" src="Assets/linkedin.png" alt="LinkedIn">
 				</a>
 			</li>
+			
+			<!-- <li class="selfie">					
+				<img id="headshot" src="Assets/headshot.jpg" alt="GMR">
+			</li> -->
+			
 			<li>
 				<a href="https://github.com/ginamr">
 				<img class="icon" src="Assets/github.png" alt="Github">
 				</a>
 			</li>
 		</ul>
+		<img id="headshot" src="Assets/headshot.jpg" alt="GMR">
 		<!-- end of links -->
 	</section>
 	
@@ -129,8 +141,8 @@
 	</section>
 	
 	<footer>
-		<img class="selfie" src="Assets/gmr.jpg" alt=":)">
-		<p class="copyright"><small>&copy; Gina Marie Robinson</small></p>
+		<!-- <img class="selfie" src="Assets/gmr.jpg" alt=":)"> -->
+		<p><small class="copyright">&copy; Gina Marie Robinson</small></p>
 	</footer>
 </body>
 </html>

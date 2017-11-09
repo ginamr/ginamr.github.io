@@ -11,15 +11,17 @@
 
 /* main css */
 *{
-	font-family: Helvetica;
+	/*font-family: Helvetica;*/
 	color: white;
+	font-family: 'Libre Baskerville', sans-serif; font-weight: 400; 
 }
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
 body {
-	/*width: 100%;*/
+	/*width: 100%;
+	overflow-x: hidden;*/
 	background-color: #03C9A9;
 	/* #8fc951 = (143,201,81) RGB
 	   #6C7A89 gray #03C9A9 green
@@ -33,14 +35,23 @@ header{
 	#font-size: 1.5em;
 }
 h1{
+	font-family: 'Permanent Marker', cursive;
 	animation-name: wiggle;
 	animation-duration: 2s;
+}
+h2{
+	font-family: 'Permanent Marker', cursive;
+}
+h3, h4, p, .bio, .read-more, .copyright{
+	font-family: 'Concert One', cursive;
+}
+footer{
+	text-align:center;
 }
 section, footer{
 	padding: 1em;
 	width: 100% auto;
 	margin: 2em;
-	#font-size: 1em;
 	background-color: #12294f;
 	border-radius: 2em;
 }
@@ -52,12 +63,23 @@ ul{
 	padding: 0;
 	overflow: hidden;
 } 
+.selfie{
+	display: block;
+	padding: 0em;
+	height: 50px;
+    width: 50px;
+	float: left;
+	text-align:center;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow:hidden;
+	padding: 1em;
+}
 li {
 	float: left;
 	display: block;
 	color: white;
 	text-align: center;
-	/*padding: 14px 16px;*/
 	padding: 0.5em;
 	margin-left: 1em;
 	text-decoration: none;
@@ -76,17 +98,4 @@ li:hover {
 .icon {
 	padding: 5px;
 	width: 50px;
-}
-.selfie{
-	display: block;
-	padding: 1em;
-	max-width: 33%;
-	min-width: 8em;
-    height: auto;
-	float: center;
-	text-align:center;
-	margin: 0 auto;
-}
-.copyright{
-	text-align:center;
 }

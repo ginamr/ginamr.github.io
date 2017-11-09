@@ -1,45 +1,80 @@
+/* Smallest, Phones */
+@media screen and (min-width: 0px) {
+	h1, h2{
+		font-size: 1.5em;
+	}
+	h4, p, .bio{
+		font-size: 1em;
+	}
+	.project-title{
+		font-size: 1.2em;
+	}
+	.project-name, .project-role, .project-tools{
+		font-size: 1em;
+	}
+}
+
 /* Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
-    /*body {
+    body {
         background-color: lightgreen;
     }
-	
-	header{
-		font-size: 3.5em;
+	h1, h2{
+		font-size: 2em;
 	}
-
-	section, footer{
-		font-size: 3em;
-	}*/
+	.project-title{
+		font-size: 1.5em;
+	}
+	h4, p, .bio{
+		font-size: 1.2em;
+	}
+	.project-name, .project-role, .project-tools{
+		font-size: 1em;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media screen and (min-width: 992px) {
-    /*body {
-        background-color: green;
+    body {
+        background-color: red;
     }
-	
-	header{
+	h1, h2{
+		font-size: 3.5em;
+	}
+	.project-title{
 		font-size: 2.5em;
 	}
-
-	section, footer{
-		font-size: 2em;
-		padding: 3em;
-	}*/
+	h4, p, .bio{
+		font-size: 1.5em;
+	}
+	.project-name, .project-role,  .project-tools{
+		font-size: 1.5em;
+	}
+	.read-more{
+		font-size: 1em;
+	}
 }
 
 /* Large Devices, Wide Screens */
 @media screen and (min-width: 1200px) {
-    /*body {
+    body {
         background-color: white;
-    }
-		
-	header{
 		font-size: 1.5em;
+		
+    }	
+	h1, h2{
+		font-size: 8em;
 	}
-
-	section, footer{
-		font-size: 1em;
-	}*/
+	.project-title{
+		font-size: 6em;
+	}
+	h4, p, .bio{
+		font-size: 2.25em;
+	}	
+	.project-name, .project-role, .project-tools{
+		font-size: 2em;
+	}
+	.read-more{
+		font-size: 3em;
+	}
 }
