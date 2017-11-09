@@ -4,7 +4,7 @@
 	to {background-color: #F5D76E;}
 }
 @keyframes wiggle {
-	0%{transform: rotate(1deg)}
+	0% {transform: rotate(1deg);}
     50% {transform: rotate(-1deg);}
     100% {transform: rotate(1deg);}
 }
@@ -14,10 +14,14 @@
 	font-family: Helvetica;
 	color: white;
 }
-
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
 body {
-	overflow: auto;
-	width: 100%;
+	
+
+	/*width: 100%;*/
 	background-color: #03C9A9;
 	/* #8fc951 = (143,201,81) RGB
 	   #6C7A89 gray #03C9A9 green
@@ -33,7 +37,7 @@ body {
 header{
 	padding: 1em;
 	margin: 0em;
-	font-size: 1.5em;
+	#font-size: 1.5em;
 }
 
 h1{
@@ -44,8 +48,8 @@ h1{
 section, footer{
 	padding: 1em;
 	width: 100% auto;
-	margin: 2em auto;
-	font-size: 1em;
+	margin: 2em;
+	#font-size: 1em;
 	background-color: #12294f;
 	border-radius: 2em;
 }
@@ -60,9 +64,6 @@ ul{
 
 li {
 	float: left;
-}
-
-li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -79,27 +80,6 @@ li a:hover {
 	animation-name: bubbles;
 	animation-duration: 0.5s;
 } 
-
-
-.page-link {
-	display: block;
-	color: white;
-	text-align: left;
-	padding: 1em 1em;
-	text-decoration: none;
-	border-radius: 1em;
-	background-color: black;
-	overflow: auto;
-}
-
-.pagelink-img{
-	float: left;
-	display: block;
-	padding: 1em;
-    max-width: 33%;
-	min-width: 8em;
-    height: auto;
-}
 
 .read-more {
 	float:right;
