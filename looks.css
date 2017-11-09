@@ -46,6 +46,15 @@ h2{
 h3, h4, p, .bio, .read-more, .copyright{
 	font-family: 'Concert One', cursive;
 }
+.headshot{
+	width: 33%;
+	min-width: 5em;
+	max-width: 10em;
+	overflow: hidden;	
+	/*border-radius: 2em;*/
+	padding-bottom: 1em;
+	padding-left: 1em;
+}
 footer{
 	text-align:center;
 }
@@ -64,18 +73,6 @@ ul{
 	padding: 0;
 	overflow: hidden;
 } 
-.selfie{
-	display: block;
-	padding: 0em;
-	height: 50px;
-    width: 50px;
-	float: left;
-	text-align:center;
-	margin: 0 auto;
-	border-radius: 50%;
-	overflow:hidden;
-	padding: 1em;
-}
 li {
 	float: left;
 	display: block;

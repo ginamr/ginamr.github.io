@@ -29,12 +29,6 @@ img {
 	width: 100%;
 	height: auto;
 }
-.headshot{
-	width: 33%;
-	min-width: 5em;
-	max-width: 100em;
-	overflow: hidden;	
-}
 .project-content {
 	/*display: block;*/
 	margin: 1em auto 1em auto;
