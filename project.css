@@ -1,11 +1,6 @@
 .project-container {
     margin: 0.5em 0.5em 1em 0em;  
-    border: 0.5em solid #0067c5;
-	/*font-size: 50%;*/
 	background-color: black;
-	
-	/*display: block;
-	color: white;*/
 	text-align: left;
 	padding: 1em 1em;
 	text-decoration: none;
@@ -14,11 +9,10 @@
 }
 .project-title {
     font-weight: bold;
-    /*font-size: 250%;*/
 	text-align: center;
     padding: 0.25em;
     background: #0067c5;
-	border: 0.1em solid white;
+	border: 0.1em solid #bbc3cc;
 }
 .project-img {
     display: block;	
@@ -37,25 +31,29 @@ img {
 .project-content {
 	/*display: block;*/
 	margin: 1em auto 1em auto;
-	#border: 0.5em solid yellow;
 	text-align: left;
 	font-size: 1em;	
 	max-width: 70%;
 	min-width: 8em;
 }
 .project-name{
-	background-color: yellow;
+	background-color: #1f3a93;
 	padding:1em;
 	margin:0.5em;
-	width:100%;
+	border: 0.1em solid #bbc3cc;
+	border-radius: 1em;
 }
 .project-role{
-	background-color: red;
+	background-color: #3a539b;
 	padding:1em;
 	margin:0.5em;
+	border: 0.1em solid #bbc3cc;
+	border-radius: 1em;
 }
 .project-tools{
-	background-color: green;
+	background-color: #4b77be;
 	padding:1em;
 	margin:0.5em;
+	border: 0.1em solid #bbc3cc;
+	border-radius: 1em;
 }
