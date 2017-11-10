@@ -1,3 +1,7 @@
+function scrollToTop() {
+	window.scrollTo(0, 0);
+};
+
 /*function tellSize() {
 	//var img = document.getElementById('iconDimensions');
 	//alert(img.width + 'x' + img.height);
