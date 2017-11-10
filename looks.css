@@ -30,6 +30,34 @@ body {
 	animation-name: background;
 	animation-duration: 3s;
 }
+/* apply to nav and nav li's */
+nav li{
+	background: black;
+	margin-top: 1.5em;
+	max-width: 25%;
+	padding: 0.5em;
+}
+nav li a{
+	text-decoration: none;
+}
+/* G logo needs a white background */
+nav li img{
+	background: white;
+	margin: 0em;
+	overflow: hidden;
+}
+#logo{
+	border: 1em solid white;
+	background: white;
+	margin: 0em;
+	padding: 0em;
+	overflow: hidden;	
+}
+#logo:hover{
+	border: 1em solid #F5D76E;
+	animation-name: bubbles;
+	animation-duration: 0.5s;
+}
 header{
 	padding: 1em;
 	margin: 0em;
