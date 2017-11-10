@@ -2,7 +2,6 @@
 	background-color: black;
 	padding: 0.5em 0.5em;
 	text-decoration: none;
-	/*border-radius: 1em;*/
 	overflow: hidden;
 }
 .project-title {
@@ -26,9 +25,7 @@ img {
 	height: auto;
 }
 .project-content {
-	/*margin: 1em auto 1em auto;*/
 	text-align: left;
-	/*max-width: 70%;*/
 	min-width: 8em;
 }
 .project-name{
