@@ -42,21 +42,16 @@ img {
 }
 .project-name{
 	background-color: #1f3a93;
-	padding-left:1em;
-	margin-top:0.5em;
-	border: 0.1em solid #bbc3cc;
-	border-radius: 1em;
 }
 .project-role{
 	background-color: #3a539b;
-	padding-left:1em;
-	margin-top:0.5em;
-	border: 0.1em solid #bbc3cc;
-	border-radius: 1em;
 }
 .project-tools{
 	background-color: #4b77be;
+}
+.project-name, .project-role, .project-tools{
 	padding-left:1em;
+	padding-right: 1em;
 	margin-top:0.5em;
 	border: 0.1em solid #bbc3cc;
 	border-radius: 1em;

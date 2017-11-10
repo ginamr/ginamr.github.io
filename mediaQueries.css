@@ -1,16 +1,19 @@
 /* Smallest, Phones */
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 479px) {
 	h1, h2{
 		font-size: 1.5em;
 	}
 	h4, p, .bio{
 		font-size: 1em;
 	}
+	section{
+		margin: 1em;
+	}
 	.project-title{
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 	.project-name, .project-role, .project-tools{
-		font-size: 0.8em;
+		font-size: 1.2em;
 	}
 }
 
