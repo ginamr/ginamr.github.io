@@ -20,7 +20,18 @@
 	overflow: hidden;
 	margin: 0em auto;
 }
-.project-img-smaller img{
+.project-img-smaller-wide img{
+    display: block;	
+	background-color: black;
+	text-align: left;
+	float: center;
+	width: 80%;
+	min-width: 10em;
+	overflow: hidden;
+	margin: 0em auto;
+	padding: 1em;
+}
+.project-img-smaller-narrow img{
     display: block;	
 	background-color: black;
 	text-align: left;
@@ -55,4 +66,8 @@ img {
 	margin-top:0.5em;
 	border: 0.1em solid #bbc3cc;
 	border-radius: 1em;
+}
+#shrink-img{
+	width: 10%;
+	min-width: 5em;
 }

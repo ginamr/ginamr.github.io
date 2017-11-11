@@ -84,4 +84,7 @@
 	.read-more{
 		font-size: 2em;
 	}
+	.project-img-smaller-wide img{
+		max-width: 60%;
+	}
 }
