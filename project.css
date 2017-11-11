@@ -24,10 +24,10 @@
     display: block;	
 	background-color: black;
 	text-align: left;
-	float: left;
+	float: center;
 	width: 50%;
 	min-width: 4em;
-	max-width: 6em;
+	max-width: 10em;
 	overflow: hidden;
 	margin: 0em auto;
 	padding: 1em;
