@@ -12,7 +12,7 @@
 	.project-title{
 		font-size: 1.5em;
 	}
-	.project-name, .project-role, .project-tools{
+	.read-more, .project-name, .project-role, .project-tools{
 		font-size: 1.2em;
 	}
 }
@@ -25,14 +25,17 @@
 	h1, h2{
 		font-size: 2em;
 	}
-	.project-title{
-		font-size: 1.5em;
-	}
 	h4, p, .bio, li{
-		font-size: 1.2em;
+		font-size: 1.2em;	
+	}
+	.project-title{
+		font-size: 1.7em;
 	}
 	.project-name, .project-role, .project-tools{
-		font-size: 1em;
+		font-size: 1.3em;
+	}
+	.read-more{
+		font-size: 1.7em;
 	}
 }
 
@@ -54,7 +57,7 @@
 		font-size: 1.5em;
 	}
 	.read-more{
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 }
 
