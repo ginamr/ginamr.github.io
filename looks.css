@@ -26,7 +26,8 @@ code{
 body {
 	max-width: 100%;
 	overflow-x: hidden;
-
+	padding: 0em;
+	margin: 0em;
 	background-color: #3498db;/*#03C9A9;*/
 	/* #8fc951 = (143,201,81) RGB
 	   #6C7A89 gray #03C9A9 green
@@ -35,6 +36,17 @@ body {
 	animation-duration: 3s;
 }
 /* apply to nav and nav li's */
+nav{
+	position: fixed;
+	top: 0;
+	width:100%;
+	overflow: hidden;
+	margin: 0em;
+	background-color: rgba(0, 50, 255, 0.2);
+}
+#first-section{
+	margin-top: 10em;
+}
 nav li{
 	background: #2ecc71;/*#6C7A89;*/
 	margin-top: 1.5em;
@@ -59,14 +71,12 @@ nav li img{
 	margin: 0em;
 	overflow: hidden;
 }
-.word-bubble{
-	background: #6C7A89; /*gray*/
-	color: black;
-}
 #logo{
 	border: 1em solid white;
 	background: white;
 	margin: 0em;
+	margin-top: 1em;
+	margin-left: 1em;
 	padding: 0em;
 	overflow: hidden;	
 }
@@ -75,6 +85,7 @@ nav li img{
 	animation-name: bubbles;
 	animation-duration: 0.5s;
 }
+
 header{
 	padding: 1em;
 	margin: 0em;
@@ -93,7 +104,7 @@ h3, h4, p, .bio, .read-more, .copyright{
 }
 strong{
 	font-family: 'Concert One', cursive;
-	text-shadow: 2px 2px #6C7A89;
+	text-shadow: 2px 2px #003171;/*#6C7A89;*/
 }
 .headshot{
 	width: 33%;
@@ -158,6 +169,6 @@ li:hover {
     text-decoration: none;
     font-size: 1em;
 	border: 2px solid #4CAF50; /* Green */
-    box-shadow: 0em 0em 2em #F5D76E;
+    box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
 	width: 100%;
 }
