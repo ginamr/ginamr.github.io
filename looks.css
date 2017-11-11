@@ -12,12 +12,16 @@
 /* main css */
 *{
 	color: white;
-	font-family: 'Libre Baskerville', sans-serif; font-weight: 400; 
+	/*font-family: 'Libre Baskerville', sans-serif; font-weight: 400; */
+	font-family: 'Concert One', cursive;
 }
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	max-width: 100%;
+}
+code{
+	font-family:courier;
 }
 body {
 	max-width: 100%;
@@ -32,10 +36,19 @@ body {
 }
 /* apply to nav and nav li's */
 nav li{
-	background: black;
+	background: #2ecc71;/*#6C7A89;*/
 	margin-top: 1.5em;
 	max-width: 25%;
 	padding: 0.5em;
+	margin: 1em;
+	margin-bottom: 1em;
+}
+/* word bubbles */
+li{
+	/*margin: 0.25em;
+	margin-bottom: 0.25em;	*/
+	margin-top: 0.5em;
+	padding: 0em 0em 0em 0em;
 }
 nav li a{
 	text-decoration: none;
@@ -45,6 +58,10 @@ nav li img{
 	background: white;
 	margin: 0em;
 	overflow: hidden;
+}
+.word-bubble{
+	background: #6C7A89; /*gray*/
+	color: black;
 }
 #logo{
 	border: 1em solid white;
@@ -69,9 +86,14 @@ h1{
 }
 h2{
 	font-family: 'Permanent Marker', cursive;
+	text-align: center;
 }
 h3, h4, p, .bio, .read-more, .copyright{
 	font-family: 'Concert One', cursive;
+}
+strong{
+	font-family: 'Concert One', cursive;
+	text-shadow: 2px 2px #6C7A89;
 }
 .headshot{
 	width: 33%;
@@ -103,7 +125,7 @@ ul{
 li {
 	float: left;
 	display: block;
-	color: white;
+	color: black;
 	text-align: center;
 	padding: 0.5em;
 	margin-left: 1em;
