@@ -22,9 +22,9 @@
 
 /* Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
-    body {
+    /*body {
         background-color: lightgreen;
-    }
+    }*/
 	h1, h2{
 		font-size: 2em;
 	}
@@ -47,9 +47,9 @@
 
 /* Medium Devices, Desktops */
 @media screen and (min-width: 992px) {
-    body {
+    /*body {
         background-color: #e74c3c;
-    }
+    }*/
 	h1, h2{
 		font-size: 3.5em;
 	}
@@ -72,9 +72,9 @@
 
 /* Large Devices, Wide Screens */
 @media screen and (min-width: 1200px) {
-    body {
+    /*body {
         background-color: white;
-    }	
+    }*/	
 	h1, h2{
 		font-size: 2em;
 	}
