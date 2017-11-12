@@ -73,13 +73,13 @@
 		font-size: 2em;
 	}
 	h4, p{
-		font-size: 1em;
+		font-size: 2em;
 	}	
 	.bio, li{
 		font-size: 1.5em;
 	}
 	.project-name, .project-role, .project-tools{
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 	.read-more{
 		font-size: 2em;
