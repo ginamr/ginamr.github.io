@@ -108,7 +108,7 @@ h3, h4, p, .bio, .read-more, .copyright{
 }
 strong{
 	font-family: 'Concert One', cursive;
-	text-shadow: 2px 2px #003171;/*#6C7A89;*/
+	text-shadow: 2px 2px black;/*#003171;*//*#6C7A89;*/
 }
 .headshot{
 	width: 33%;
@@ -116,8 +116,9 @@ strong{
 	max-width: 10em;
 	overflow: hidden;	
 	/*border-radius: 2em;*/
-	padding-bottom: 1em;
-	padding-left: 1em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	border: 0.25em solid white;
 }
 footer{
 	text-align:center;
