@@ -1,73 +1,73 @@
 .project-container {
-	background-color: black;
-	padding: 0.5em 0.5em;
-	text-decoration: none;
-	overflow: hidden;
+    background-color: black;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    overflow: hidden;
 }
 .project-title {
-	text-align: center;
+    text-align: center;
     padding: 0.25em;
     background: #0067c5;
-	border: 0.1em solid #bbc3cc;
+    border: 0.1em solid #bbc3cc;
 }
 .project-img {
-    display: block;	
-	background-color: black;
-	text-align: center;
-	width: 33%;
-	min-width: 8em;
-	max-width: 100em;
-	overflow: hidden;
-	margin: 0em auto;
+    display: block;    
+    background-color: black;
+    text-align: center;
+    width: 33%;
+    min-width: 8em;
+    max-width: 100em;
+    overflow: hidden;
+    margin: 0em auto;
 }
 .project-img-smaller-wide img{
-    display: block;	
-	background-color: black;
-	text-align: left;
-	float: center;
-	width: 80%;
-	min-width: 10em;
-	overflow: hidden;
-	margin: 0em auto;
-	padding: 1em;
+    display: block;    
+    background-color: black;
+    text-align: left;
+    float: center;
+    width: 80%;
+    min-width: 10em;
+    overflow: hidden;
+    margin: 0em auto;
+    padding: 1em;
 }
 .project-img-smaller-narrow img{
-    display: block;	
-	background-color: black;
-	text-align: left;
-	float: center;
-	width: 50%;
-	min-width: 4em;
-	max-width: 10em;
-	overflow: hidden;
-	margin: 0em auto;
-	padding: 1em;
+    display: block;    
+    background-color: black;
+    text-align: left;
+    float: center;
+    width: 50%;
+    min-width: 4em;
+    max-width: 10em;
+    overflow: hidden;
+    margin: 0em auto;
+    padding: 1em;
 }
 img {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 .project-content {
-	text-align: left;
-	min-width: 8em;
+    text-align: left;
+    min-width: 8em;
 }
 .project-name{
-	background-color: #1f3a93;
+    background-color: #1f3a93;
 }
 .project-role{
-	background-color: #3a539b;
+    background-color: #3a539b;
 }
 .project-tools{
-	background-color: #4b77be;
+    background-color: #4b77be;
 }
 .project-name, .project-role, .project-tools{
-	padding-left:1em;
-	padding-right: 1em;
-	margin-top:0.5em;
-	border: 0.1em solid #bbc3cc;
-	border-radius: 1em;
+    padding-left:1em;
+    padding-right: 1em;
+    margin-top:0.5em;
+    border: 0.1em solid #bbc3cc;
+    border-radius: 1em;
 }
 #shrink-img{
-	width: 10%;
-	min-width: 5em;
+    width: 10%;
+    min-width: 5em;
 }

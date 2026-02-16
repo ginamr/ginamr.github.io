@@ -1,23 +1,23 @@
 /* Smallest, Phones */
 @media screen and (max-width: 479px) {
-	h1, h2{
-		font-size: 1.5em;
-	}
-	h3, h4, p, .bio, li{
-		font-size: 1em;
-	}
-	section{
-		margin: 1em;
-	}
-	.project-title{
-		font-size: 1.5em;
-	}
-	.read-more, .project-name, .project-role, .project-tools{
-		font-size: 1.2em;
-	}
-	h2 ul{
-		font-size: 0.7em;	
-	}
+    h1, h2{
+        font-size: 1.5em;
+    }
+    h3, h4, p, .bio, li{
+        font-size: 1em;
+    }
+    section{
+        margin: 1em;
+    }
+    .project-title{
+        font-size: 1.5em;
+    }
+    .read-more, .project-name, .project-role, .project-tools{
+        font-size: 1.2em;
+    }
+    h2 ul{
+        font-size: 0.7em;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -25,24 +25,24 @@
     /*body {
         background-color: lightgreen;
     }*/
-	h1, h2{
-		font-size: 2em;
-	}
-	h3, h4, p, .bio, li{
-		font-size: 1.2em;	
-	}
-	.project-title{
-		font-size: 1.7em;
-	}
-	.project-name, .project-role, .project-tools{
-		font-size: 1.3em;
-	}
-	.read-more{
-		font-size: 1.7em;
-	}
-	h2 ul{
-		font-size: 0.5em;	
-	}
+    h1, h2{
+        font-size: 2em;
+    }
+    h3, h4, p, .bio, li{
+        font-size: 1.2em;
+    }
+    .project-title{
+        font-size: 1.7em;
+    }
+    .project-name, .project-role, .project-tools{
+        font-size: 1.3em;
+    }
+    .read-more{
+        font-size: 1.7em;
+    }
+    h2 ul{
+        font-size: 0.5em;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -50,53 +50,53 @@
     /*body {
         background-color: #e74c3c;
     }*/
-	h1, h2{
-		font-size: 3.5em;
-	}
-	.project-title{
-		font-size: 2.5em;
-	}
-	h3, h4, p, .bio, li{
-		font-size: 1.5em;
-	}
-	.project-name, .project-role,  .project-tools{
-		font-size: 1.5em;
-	}
-	.read-more{
-		font-size: 2em;
-	}
-	h2 ul{
-		font-size: 0.4em;	
-	}
+    h1, h2{
+        font-size: 3.5em;
+    }
+    .project-title{
+        font-size: 2.5em;
+    }
+    h3, h4, p, .bio, li{
+        font-size: 1.5em;
+    }
+    .project-name, .project-role,  .project-tools{
+        font-size: 1.5em;
+    }
+    .read-more{
+        font-size: 2em;
+    }
+    h2 ul{
+        font-size: 0.4em;
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media screen and (min-width: 1200px) {
     /*body {
         background-color: white;
-    }*/	
-	h1, h2{
-		font-size: 2em;
-	}
-	.project-title{
-		font-size: 2em;
-	}
-	h3, h4, p{
-		font-size: 1.2em;
-	}	
-	.bio, li{
-		font-size: 1.5em;
-	}
-	.project-name, .project-role, .project-tools{
-		font-size: 1em;
-	}
-	.read-more{
-		font-size: 1.5em;
-	}
-	.project-img-smaller-wide img{
-		max-width: 60%;
-	}
-	h2 ul{
-		font-size: 0.5em;	
-	}
+    }*/    
+    h1, h2{
+        font-size: 2em;
+    }
+    .project-title{
+        font-size: 2em;
+    }
+    h3, h4, p{
+        font-size: 1.2em;
+    }    
+    .bio, li{
+        font-size: 1.5em;
+    }
+    .project-name, .project-role, .project-tools{
+        font-size: 1em;
+    }
+    .read-more{
+        font-size: 1.5em;
+    }
+    .project-img-smaller-wide img{
+        max-width: 60%;
+    }
+    h2 ul{
+        font-size: 0.5em;
+    }
 }
