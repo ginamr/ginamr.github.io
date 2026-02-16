@@ -1,4 +1,8 @@
 # ginamr.github.io
-# This is a website portfolio for my software engineering projects
-# I referenced documentation from: https://www.w3schools.com
-# I also referenced HTML5 for Web Designers, CSS3 for Web Designers, as well as Responsible Responsive Design from the A Book Apart textbook series. 
+This is a website portfolio for my software engineering projects initially built as coursework for UCI.
+
+## References
+- [w3 schools](https://www.w3schools.com)
+- HTML5 for Web Designers
+- CSS3 for Web Designers
+- Responsible Responsive Design (A Book Apart textbook series)
