@@ -68,8 +68,17 @@ class ProjectsCarousel extends HTMLElement {
     }
 
     connectedCallback() {
+        // Clean up any existing instance first
+        if (this.projectCarousel) {
+            this.projectCarousel.dispose();
+            this.projectCarousel = null;
+        }
+
         this.shadowRoot.innerHTML = this.createTemplate();
-        this.initCarousel();
+        // Use requestAnimationFrame to ensure DOM is fully ready
+        requestAnimationFrame(() => {
+            this.initCarousel();
+        });
     }
 
     disconnectedCallback() {
@@ -80,16 +89,17 @@ class ProjectsCarousel extends HTMLElement {
         }
 
         // Remove event listeners
-        if (this.slideHandler) {
-            const carousel = this.shadowRoot.getElementById('projectsCarousel');
-            if (carousel) {
-                carousel.removeEventListener('slid.bs.carousel', this.slideHandler);
-            }
+        const carousel = this.shadowRoot?.getElementById('projectsCarousel');
+        if (carousel && this.slideHandler) {
+            carousel.removeEventListener('slid.bs.carousel', this.slideHandler);
         }
 
         if (this.resizeHandler) {
             window.removeEventListener('resize', this.resizeHandler);
         }
+
+        this.slideHandler = null;
+        this.resizeHandler = null;
     }
 
     createTemplate() {
@@ -159,21 +169,13 @@ class ProjectsCarousel extends HTMLElement {
         const carousel = this.shadowRoot.getElementById('projectsCarousel');
         if (!carousel) return;
 
-        // Initialize Bootstrap carousel
-        this.projectCarousel = new bootstrap.Carousel(carousel, {
-            interval: 5000,
-            pause: 'hover',
-            ride: 'carousel'
-        });
-
-        // Custom carousel height adjustment code
         const carouselInner = this.shadowRoot.querySelector('.carousel-inner');
-
+        
         // Convert pixels to em
-        function pxToEm(px) {
+        const pxToEm = (px) => {
             const baseFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
             return px / baseFontSize;
-        }
+        };
 
         // Set carousel height to match active slide
         const setCarouselHeight = () => {
@@ -188,14 +190,63 @@ class ProjectsCarousel extends HTMLElement {
         this.slideHandler = setCarouselHeight;
         this.resizeHandler = setCarouselHeight;
 
-        // Update height after slide transition completes
-        carousel.addEventListener('slid.bs.carousel', this.slideHandler);
+        // Wait for images to load before initializing
+        const images = carousel.querySelectorAll('img');
+        let imagesLoaded = 0;
 
-        // Set initial height
-        setCarouselHeight();
+        const finalizeCarousel = () => {
+            // Initialize Bootstrap carousel
+            this.projectCarousel = new bootstrap.Carousel(carousel, {
+                interval: 5000,
+                pause: 'hover',
+                ride: 'carousel'
+            });
 
-        // Recalculate on window resize
-        window.addEventListener('resize', this.resizeHandler);
+            // Update height after slide transition completes
+            carousel.addEventListener('slid.bs.carousel', this.slideHandler);
+
+            // Set initial height
+            setCarouselHeight();
+
+            // Recalculate on window resize
+            window.addEventListener('resize', this.resizeHandler);
+        };
+
+        if (images.length === 0) {
+            // No images, initialize immediately
+            finalizeCarousel();
+        } else {
+            // Wait for all images to load
+            images.forEach((img) => {
+                if (img.complete) {
+                    imagesLoaded++;
+                } else {
+                    img.addEventListener('load', () => {
+                        imagesLoaded++;
+                        if (imagesLoaded === images.length) {
+                            finalizeCarousel();
+                        }
+                    });
+                    img.addEventListener('error', () => {
+                        imagesLoaded++;
+                        if (imagesLoaded === images.length) {
+                            finalizeCarousel();
+                        }
+                    });
+                }
+            });
+
+            // Timeout fallback (2 seconds)
+            setTimeout(() => {
+                if (imagesLoaded < images.length) {
+                    finalizeCarousel();
+                }
+            }, 2000);
+
+            if (imagesLoaded === images.length) {
+                finalizeCarousel();
+            }
+        }
     }
 }
 
