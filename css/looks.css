@@ -181,7 +181,7 @@ section, footer{
     text-decoration: none;
     border-radius: 3em;
     background-color: white;
-    font-size: 1em;
+    font-size: 1.4em;
 }
 .bubble-list li:hover {
     background-color: #F5D76E;
