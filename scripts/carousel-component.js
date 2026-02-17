@@ -173,13 +173,13 @@ class ProjectsCarousel extends HTMLElement {
                     padding: 0.25em;
                     background: #0067c5;
                     border: 0.1em solid #bbc3cc;
-                    font-size: 1.5em;
+                    font-size: 1.875em;
                 }
                 
                 .project-content {
                     text-align: left;
                     min-width: 8em;
-                    font-size: 1em;
+                    font-size: 1.25em;
                 }
                 
                 .project-name {
@@ -200,7 +200,7 @@ class ProjectsCarousel extends HTMLElement {
                     margin-top: 0.5em;
                     border: 0.1em solid #bbc3cc;
                     border-radius: 1em;
-                    font-size: 1em;
+                    font-size: 1.25em;
                 }
                 
                 /* Carousel-specific styles */
