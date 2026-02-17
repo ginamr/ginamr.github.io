@@ -178,7 +178,7 @@ section, footer{
     padding: 0.5em;
     margin: 0.5em;
     text-decoration: none;
-    border-radius: 10em;
+    border-radius: 3em;
     background-color: white;
 }
 .bubble-list li:hover {

@@ -1,22 +1,31 @@
 /* Smallest, Phones */
 @media screen and (max-width: 479px) {
-    h1, h2{
-        font-size: 1.5em;
+    h1{
+        font-size: 2.2em;
     }
-    h3, h4, p, .bio, li{
-        font-size: 1em;
+    h2{
+        font-size: 1.8em;
+    }
+    h3, h4{
+        font-size: 1.4em;
+    }
+    p, .bio, li{
+        font-size: 1.1em;
     }
     section{
         margin: 1em;
     }
     .project-title{
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     .project-name, .project-role, .project-tools, .read-more{
-        font-size: 0.95em;
+        font-size: 1.1em;
     }
     h2 ul{
-        font-size: 0.7em;
+        font-size: 1.1em;
+    }
+    p ul{
+        font-size: 0.8em;
     }
 }
 
