@@ -14,6 +14,7 @@
 #projectsCarousel .carousel-item {
     background-color: #2980b9;
     min-height: 35em;
+    padding: 1em;
 }
 
 #projectsCarousel .project-img {
@@ -38,6 +39,11 @@
     cursor: pointer;
 }
 
+#projectsCarousel .project-container {
+    background-color: black;
+    overflow: hidden;
+}
+
 #projectsCarousel .project-container-link:hover .project-container {
     transform: scale(1.02);
     transition: transform 0.2s ease;
@@ -45,14 +51,23 @@
 
 #projectsCarousel .carousel-indicators [data-bs-target] {
     background-color: #2ecc71;
+    cursor: pointer;
 }
 
 #projectsCarousel .carousel-indicators [data-bs-target].active {
     background-color: #2ecc71;
+    cursor: pointer;
+}
+
+#projectsCarousel .carousel-control-prev,
+#projectsCarousel .carousel-control-next {
+    width: 5%;
+    z-index: 10;
 }
 
 #projectsCarousel .carousel-control-prev-icon,
 #projectsCarousel .carousel-control-next-icon {
     background-color: #2ecc71;
     border-radius: 50%;
+    padding: 1.5em;
 }
