@@ -16,7 +16,6 @@
 /* main css */
 *{
     color: white;
-    /*font-family: 'Libre Baskerville', sans-serif; font-weight: 400; */
     font-family: 'Concert One', cursive;
 }
 
@@ -109,7 +108,7 @@ h2{
     text-align: center;
 }
 
-h3, h4, p, .bio, .read-more, .copyright{
+h3, h4, p, .bio, .copyright{
     font-family: 'Concert One', cursive;
 }
 
@@ -123,7 +122,6 @@ strong{
     min-width: 5em;
     max-width: 10em;
     overflow: hidden;    
-    /*border-radius: 2em;*/
     margin-bottom: 1em;
     margin-left: 2em;
     border: 0.25em solid white;
@@ -181,20 +179,19 @@ section, footer{
     text-decoration: none;
     border-radius: 3em;
     background-color: white;
+    font-size: 1em;
 }
 .bubble-list li:hover {
     background-color: #F5D76E;
     animation-name: bubbles;
     animation-duration: 0.5s;
 }
-.read-more {
-    float:right;
-    padding:2em;
-}
+
 .icon {
     padding: 5px;
     width: 50px !important;
 }
+
 .scrollToTop{
     float: center;
     display : block;
