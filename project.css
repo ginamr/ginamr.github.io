@@ -85,8 +85,8 @@ img {
 }
 
 #projectsCarousel .carousel-item {
-    min-height: 35em;
     background-color: #2980b9;
+    min-height: 35em;
 }
 
 #projectsCarousel .carousel-indicators [data-bs-target] {
