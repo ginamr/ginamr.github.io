@@ -1,7 +1,12 @@
 class ProjectsCarousel extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open' });
+        if (!this.shadowRoot) {
+            this.attachShadow({ mode: 'open' });
+        }
+        this.bsCarousel = null;
+        this.resizeHandler = null;
+        this.slideHandler = null;
         
         // Project data
         this.projects = [
@@ -65,6 +70,26 @@ class ProjectsCarousel extends HTMLElement {
     connectedCallback() {
         this.shadowRoot.innerHTML = this.createTemplate();
         this.initCarousel();
+    }
+
+    disconnectedCallback() {
+        // Clean up Bootstrap carousel instance
+        if (this.bsCarousel) {
+            this.bsCarousel.dispose();
+            this.bsCarousel = null;
+        }
+
+        // Remove event listeners
+        if (this.slideHandler) {
+            const carousel = this.shadowRoot.getElementById('projectsCarousel');
+            if (carousel) {
+                carousel.removeEventListener('slid.bs.carousel', this.slideHandler);
+            }
+        }
+
+        if (this.resizeHandler) {
+            window.removeEventListener('resize', this.resizeHandler);
+        }
     }
 
     createTemplate() {
@@ -135,7 +160,7 @@ class ProjectsCarousel extends HTMLElement {
         if (!carousel) return;
 
         // Initialize Bootstrap carousel
-        const bsCarousel = new bootstrap.Carousel(carousel, {
+        this.bsCarousel = new bootstrap.Carousel(carousel, {
             interval: 5000,
             pause: 'hover',
             ride: 'carousel'
@@ -151,24 +176,26 @@ class ProjectsCarousel extends HTMLElement {
         }
 
         // Set carousel height to match active slide
-        function setCarouselHeight() {
+        const setCarouselHeight = () => {
             const activeItem = carousel.querySelector('.carousel-item.active');
-            if (activeItem) {
+            if (activeItem && carouselInner) {
                 const heightInEm = pxToEm(activeItem.offsetHeight);
                 carouselInner.style.minHeight = heightInEm + 'em';
             }
-        }
+        };
+
+        // Store handlers for cleanup
+        this.slideHandler = setCarouselHeight;
+        this.resizeHandler = setCarouselHeight;
 
         // Update height after slide transition completes
-        carousel.addEventListener('slid.bs.carousel', function() {
-            setCarouselHeight();
-        });
+        carousel.addEventListener('slid.bs.carousel', this.slideHandler);
 
         // Set initial height
         setCarouselHeight();
 
         // Recalculate on window resize
-        window.addEventListener('resize', setCarouselHeight);
+        window.addEventListener('resize', this.resizeHandler);
     }
 }
 
