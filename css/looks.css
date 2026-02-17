@@ -126,7 +126,9 @@ strong{
     overflow: hidden;    
     margin-bottom: 1em;
     margin-left: 2em;
+    margin-right: 1em;
     border: 0.25em solid white;
+    float: left;
 }
 
 footer{
@@ -137,6 +139,7 @@ section, footer{
     padding: 1em;
     width: 100% auto;
     margin: 2em;
+    margin-top: 3em;
     background-color: #2980b9;
     border-radius: 2em;
 }
