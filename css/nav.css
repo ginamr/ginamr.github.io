@@ -12,13 +12,13 @@ nav{
 #first-section{
     margin-top: 6.5em;
 }
-body nav ul{
+nav ul{
     padding: 0em;
     margin: 0em;
     list-style-type: none;
     overflow: hidden;
 }
-body nav li{
+nav li{
     float: left;
     display: block;
     background: #2ecc71;/*#6C7A89;*/
@@ -30,16 +30,16 @@ body nav li{
     text-align: center;
     list-style: none;
 }
-body nav li:hover {
+nav li:hover {
     background-color: #F5D76E;
     animation-name: bubbles;
     animation-duration: 0.5s;
 }
-body nav li a{
+nav li a{
     text-decoration: none;
 }
 /* G logo needs a white background */
-body nav li img{
+nav li img{
     background: white;
     margin: 0em;
     overflow: hidden;
