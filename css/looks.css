@@ -20,12 +20,12 @@
 .content-link {
     display: inline-block;
     color: #0000FF;
-    background-color: rgba(191, 246, 187, 0.9);
+    background-color: #ffffff;
     text-decoration: none;
     padding: 0.3em 0.8em;
     margin: 0.2em;
     border-radius: 1.5em;
-    border: 2px solid rgba(191, 246, 187, 0.9);
+    border: 2px solid #003171;
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
@@ -33,15 +33,14 @@
 
 .content-link:visited {
     color: #800080;
-    background-color: rgba(191, 246, 187, 0.9);
+    background-color: rgba(253, 233, 249, 0.9);
 }
 
 .content-link:hover {
     color: #2ecc71;
-    background-color: #F5D76E;
-    border-color: #F5D76E;
+    background-color: #ffffff;
+    border-color: #003171;
     text-decoration: none;
-    text-shadow: 0px 0px 4px rgba(46, 204, 113, 0.5);
     transform: translateY(-0.1em);
     box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
     animation-name: bubbles;
@@ -50,7 +49,7 @@
 
 .content-link:active {
     color: #003171;
-    background-color: rgba(191, 246, 187, 0.9);
+    background-color: #ffffff;
     transform: translateY(0em);
 }
 
@@ -58,21 +57,26 @@
     outline: 2px solid #F5D76E;
     outline-offset: 2px;
 }
+
 html {
     overflow-x: hidden;
     overflow-y: scroll;
     max-width: 100%;
 }
+
 code{
     font-family:courier;
 }
+
 #email{
     max-width: 5em;
 }
+
 #alien{
     width: 30%;
     max-width: 6em;
 }
+
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -90,22 +94,27 @@ header{
     padding: 1em;
     margin: 0em;
 }
+
 h1{
     font-family: 'Permanent Marker', cursive;
     animation-name: wiggle;
     animation-duration: 2s;
 }
+
 h2{
     font-family: 'Permanent Marker', cursive;
     text-align: center;
 }
+
 h3, h4, p, .bio, .read-more, .copyright{
     font-family: 'Concert One', cursive;
 }
+
 strong{
     font-family: 'Concert One', cursive;
     text-shadow: 2px 2px black;/*#003171;*//*#6C7A89;*/
 }
+
 .headshot{
     width: 33%;
     min-width: 5em;
@@ -116,9 +125,11 @@ strong{
     margin-left: 2em;
     border: 0.25em solid white;
 }
+
 footer{
     text-align:center;
 }
+
 section, footer{
     padding: 1em;
     width: 100% auto;
