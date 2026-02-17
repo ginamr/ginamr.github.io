@@ -1,16 +1,16 @@
 /* Smallest, Phones */
 @media screen and (max-width: 479px) {
     h1{
-        font-size: 2.5em;
+        font-size: 2.75em;
     }
     h2{
-        font-size: 1.9em;
+        font-size: 2.09em;
     }
     h3, h4{
-        font-size: 1.5em;
+        font-size: 1.65em;
     }
     p, li{
-        font-size: 1.4em;
+        font-size: 1.54em;
     }
     .bio{
         font-size: 1.2em;
@@ -19,16 +19,16 @@
         margin: 1em;
     }
     .project-title{
-        font-size: 1.5em;
+        font-size: 1.65em;
     }
     .project-name, .project-role, .project-tools, .read-more{
-        font-size: 1.4em;
+        font-size: 1.54em;
     }
     h2 ul{
-        font-size: 1.4em;
+        font-size: 1.54em;
     }
     p ul{
-        font-size: 1.1em;
+        font-size: 1.21em;
     }
     .project-img-smaller-wide img{
         max-width: 50%;
@@ -38,16 +38,16 @@
 /* Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
     h1{
-        font-size: 2.7em;
+        font-size: 2.97em;
     }
     h2{
-        font-size: 2.1em;
+        font-size: 2.26em;
     }
     h3, h4{
-        font-size: 1.8em;
+        font-size: 1.78em;
     }
     p, li{
-        font-size: 1.5em;
+        font-size: 1.66em;
     }
     .bio{
         font-size: 1.3em;
@@ -56,16 +56,16 @@
         margin: 1em;
     }
     .project-title{
-        font-size: 1.8em;
+        font-size: 1.78em;
     }
     .project-name, .project-role, .project-tools, .read-more{
-        font-size: 1.5em;
+        font-size: 1.66em;
     }
     h2 ul{
-        font-size: 1.5em;
+        font-size: 1.66em;
     }
     p ul{
-        font-size: 1.2em;
+        font-size: 1.31em;
     }
     .project-img-smaller-wide img{
         max-width: 50%;
@@ -75,16 +75,16 @@
 /* Medium Devices, Desktops */
 @media screen and (min-width: 992px) {
     h1{
-        font-size: 2.9em;
+        font-size: 3.19em;
     }
     h2{
-        font-size: 2.3em;
+        font-size: 2.43em;
     }
     h3, h4{
-        font-size: 1.9em;
+        font-size: 1.91em;
     }
     p, li{
-        font-size: 1.6em;
+        font-size: 1.78em;
     }
     .bio{
         font-size: 1.4em;
@@ -93,16 +93,16 @@
         margin: 1em;
     }
     .project-title{
-        font-size: 1.9em;
+        font-size: 1.91em;
     }
     .project-name, .project-role, .project-tools, .read-more{
-        font-size: 1.6em;
+        font-size: 1.78em;
     }
     h2 ul{
-        font-size: 1.6em;
+        font-size: 1.78em;
     }
     p ul{
-        font-size: 1.3em;
+        font-size: 1.41em;
     }
     .project-img-smaller-wide img{
         max-width: 50%;
@@ -112,16 +112,16 @@
 /* Large Devices, Wide Screens */
 @media screen and (min-width: 1200px) {
     h1{
-        font-size: 3.2em;
+        font-size: 3.52em;
     }
     h2{
-        font-size: 2.5em;
+        font-size: 2.67em;
     }
     h3, h4{
-        font-size: 2.0em;
+        font-size: 2.11em;
     }
     p, li{
-        font-size: 1.8em;
+        font-size: 1.97em;
     }
     .bio{
         font-size: 1.5em;
@@ -130,16 +130,16 @@
         margin: 1em;
     }
     .project-title{
-        font-size: 2.0em;
+        font-size: 2.11em;
     }
     .project-name, .project-role, .project-tools, .read-more{
-        font-size: 1.8em;
+        font-size: 1.97em;
     }
     h2 ul{
-        font-size: 1.8em;
+        font-size: 1.97em;
     }
     p ul{
-        font-size: 1.4em;
+        font-size: 1.55em;
     }
     .project-img-smaller-wide img{
         max-width: 50%;
