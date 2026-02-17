@@ -2,23 +2,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.getElementById('projectsCarousel');
     if (!carousel) return;
 
-    // Set initial height based on active slide
+    const carouselInner = carousel.querySelector('.carousel-inner');
+
+    // Convert pixels to em
+    function pxToEm(px) {
+        const baseFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        return px / baseFontSize;
+    }
+
+    // Set carousel height to match active slide
     function setCarouselHeight() {
         const activeItem = carousel.querySelector('.carousel-item.active');
         if (activeItem) {
-            const carouselInner = carousel.querySelector('.carousel-inner');
-            carouselInner.style.height = activeItem.offsetHeight + 'px';
+            const heightInEm = pxToEm(activeItem.offsetHeight);
+            carouselInner.style.minHeight = heightInEm + 'em';
         }
     }
 
-    // Set height on slide change
-    carousel.addEventListener('slide.bs.carousel', function() {
-        const nextItem = carousel.querySelector('.carousel-item.active').nextElementSibling || 
-                        carousel.querySelector('.carousel-item');
-        if (nextItem) {
-            const carouselInner = carousel.querySelector('.carousel-inner');
-            carouselInner.style.height = nextItem.offsetHeight + 'px';
-        }
+    // Update height after slide transition completes
+    carousel.addEventListener('slid.bs.carousel', function() {
+        setCarouselHeight();
     });
 
     // Set initial height
