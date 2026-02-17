@@ -1,0 +1,58 @@
+/* Carousel-specific styles for index.html */
+
+#projectsCarousel {
+    background-color: #2980b9;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+#projectsCarousel .carousel-inner {
+    background-color: #2980b9;
+    border-radius: 1em;
+}
+
+#projectsCarousel .carousel-item {
+    background-color: #2980b9;
+    min-height: 35em;
+}
+
+#projectsCarousel .project-img {
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectsCarousel .project-img img {
+    max-width: 100%;
+    max-height: 15em;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+#projectsCarousel .project-container-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+#projectsCarousel .project-container-link:hover .project-container {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+#projectsCarousel .carousel-indicators [data-bs-target] {
+    background-color: #2ecc71;
+}
+
+#projectsCarousel .carousel-indicators [data-bs-target].active {
+    background-color: #2ecc71;
+}
+
+#projectsCarousel .carousel-control-prev-icon,
+#projectsCarousel .carousel-control-next-icon {
+    background-color: #2ecc71;
+    border-radius: 50%;
+}
