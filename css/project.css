@@ -29,7 +29,7 @@
     object-fit: contain;
 }
 .project-img-smaller-wide img{
-    display: block;    
+    display: block;
     background-color: black;
     text-align: left;
     float: center;
@@ -42,6 +42,22 @@
     overflow: hidden;
     margin: 0em auto;
     padding: 1em;
+}
+.project-img-smaller-wide-inline img{
+    display: inline-block;
+    background-color: black;
+    text-align: left;
+    float: none;
+    max-width: 60%;
+    min-width: 8em;
+    max-height: 20em;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 0em auto;
+    padding: 1em;
+    vertical-align: middle;
 }
 .project-img-smaller-narrow img{
     display: block;
