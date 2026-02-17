@@ -4,7 +4,7 @@ class ProjectsCarousel extends HTMLElement {
         if (!this.shadowRoot) {
             this.attachShadow({ mode: 'open' });
         }
-        this.bsCarousel = null;
+        this.projectCarousel = null;
         this.resizeHandler = null;
         this.slideHandler = null;
         
@@ -74,9 +74,9 @@ class ProjectsCarousel extends HTMLElement {
 
     disconnectedCallback() {
         // Clean up Bootstrap carousel instance
-        if (this.bsCarousel) {
-            this.bsCarousel.dispose();
-            this.bsCarousel = null;
+        if (this.projectCarousel) {
+            this.projectCarousel.dispose();
+            this.projectCarousel = null;
         }
 
         // Remove event listeners
@@ -160,7 +160,7 @@ class ProjectsCarousel extends HTMLElement {
         if (!carousel) return;
 
         // Initialize Bootstrap carousel
-        this.bsCarousel = new bootstrap.Carousel(carousel, {
+        this.projectCarousel = new bootstrap.Carousel(carousel, {
             interval: 5000,
             pause: 'hover',
             ride: 'carousel'
