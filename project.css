@@ -14,9 +14,9 @@
     display: block;    
     background-color: black;
     text-align: center;
-    width: 33%;
+    width: 15%;
     min-width: 8em;
-    max-width: 100em;
+    max-width: 30em;
     overflow: hidden;
     margin: 0em auto;
 }
