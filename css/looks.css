@@ -151,4 +151,13 @@ section, footer{
     border: 2px solid #4CAF50; /* Green */
     box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
     width: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.scrollToTop:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+    box-shadow: 0em 0em 2.5em #2ecc71;
+    transform: translateY(-0.1em) scale(1.02);
 }

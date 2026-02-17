@@ -142,9 +142,143 @@ class ProjectsCarousel extends HTMLElement {
                 :host {
                     display: block;
                 }
+                
+                /* Base styles */
+                * {
+                    color: white;
+                    font-family: 'Concert One', cursive;
+                }
+                
+                h3, h4, p {
+                    font-family: 'Concert One', cursive;
+                    margin: 0.5em 0;
+                }
+                
+                strong {
+                    font-family: 'Concert One', cursive;
+                    text-shadow: 2px 2px black;
+                }
+                
+                /* Project container styles */
+                .project-container {
+                    background-color: black;
+                    padding: 0.5em 0.5em;
+                    text-decoration: none;
+                    overflow: hidden;
+                    color: white;
+                }
+                
+                .project-title {
+                    text-align: center;
+                    padding: 0.25em;
+                    background: #0067c5;
+                    border: 0.1em solid #bbc3cc;
+                }
+                
+                .project-content {
+                    text-align: left;
+                    min-width: 8em;
+                }
+                
+                .project-name {
+                    background-color: #1f3a93;
+                }
+                
+                .project-role {
+                    background-color: #3a539b;
+                }
+                
+                .project-tools {
+                    background-color: #4b77be;
+                }
+                
+                .project-name, .project-role, .project-tools {
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    margin-top: 0.5em;
+                    border: 0.1em solid #bbc3cc;
+                    border-radius: 1em;
+                }
+                
+                /* Carousel-specific styles */
+                #projectsCarousel {
+                    background-color: #2980b9;
+                    border-radius: 2em;
+                    padding: 1em;
+                }
+
+                #projectsCarousel .carousel-inner {
+                    background-color: #2980b9;
+                    border-radius: 1em;
+                }
+
+                #projectsCarousel .carousel-item {
+                    background-color: #2980b9;
+                    min-height: 35em;
+                    padding: 1em;
+                }
+
+                #projectsCarousel .project-img {
+                    height: 15em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                #projectsCarousel .project-img img {
+                    max-width: 100%;
+                    max-height: 15em;
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                }
+
+                #projectsCarousel .project-container-link {
+                    text-decoration: none;
+                    color: inherit;
+                    display: block;
+                    cursor: pointer;
+                }
+
+                #projectsCarousel .project-container {
+                    background-color: black;
+                    overflow: hidden;
+                }
+
+                #projectsCarousel .project-container-link:hover .project-container {
+                    transform: scale(1.02);
+                    transition: transform 0.2s ease;
+                }
+
+                #projectsCarousel .carousel-indicators {
+                    z-index: 15;
+                }
+
+                #projectsCarousel .carousel-indicators [data-bs-target] {
+                    background-color: #2ecc71;
+                    cursor: pointer;
+                }
+
+                #projectsCarousel .carousel-indicators [data-bs-target].active {
+                    background-color: #2ecc71;
+                    cursor: pointer;
+                }
+
+                #projectsCarousel .carousel-control-prev,
+                #projectsCarousel .carousel-control-next {
+                    width: 5%;
+                    z-index: 10;
+                }
+
+                #projectsCarousel .carousel-control-prev-icon,
+                #projectsCarousel .carousel-control-next-icon {
+                    background-color: #2ecc71;
+                    border-radius: 50%;
+                    padding: 1.5em;
+                }
             </style>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One|Libre+Baskerville|Permanent+Marker">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-            <link rel="stylesheet" href="../css/carousel.css">
             <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000">
                 <div class="carousel-indicators">
                     ${indicators}
