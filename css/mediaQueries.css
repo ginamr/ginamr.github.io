@@ -1,22 +1,25 @@
 /* Smallest, Phones */
 @media screen and (max-width: 479px) {
     h1, h2{
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
-    h3, h4, p, .bio, li{
+    h3, h4, p, li{
+        font-size: 1.2em;
+    }
+    .bio{
         font-size: 1em;
     }
     section{
         margin: 1em;
     }
     .project-title{
+        font-size: 1.7em;
+    }
+    .project-name, .project-role, .project-tools{
         font-size: 1.5em;
     }
-    .read-more, .project-name, .project-role, .project-tools{
-        font-size: 1.2em;
-    }
     h2 ul{
-        font-size: 0.7em;
+        font-size: 1em;
     }
 }
 
@@ -26,22 +29,22 @@
         background-color: lightgreen;
     }*/
     h1, h2{
-        font-size: 2em;
+        font-size: 2.5em;
     }
-    h3, h4, p, .bio, li{
-        font-size: 1.2em;
+    h3, h4, p, li{
+        font-size: 1.77em;
+    }
+    .bio{
+        font-size: 1.47em;
     }
     .project-title{
-        font-size: 1.7em;
+        font-size: 2.5em;
     }
     .project-name, .project-role, .project-tools{
-        font-size: 1.3em;
-    }
-    .read-more{
-        font-size: 1.7em;
+        font-size: 2.21em;
     }
     h2 ul{
-        font-size: 0.5em;
+        font-size: 1.47em;
     }
 }
 
@@ -51,22 +54,22 @@
         background-color: #e74c3c;
     }*/
     h1, h2{
-        font-size: 3.5em;
+        font-size: 4em;
     }
     .project-title{
-        font-size: 2.5em;
+        font-size: 3em;
     }
-    h3, h4, p, .bio, li{
-        font-size: 1.5em;
+    h3, h4, p, li{
+        font-size: 2.82em;
+    }
+    .bio{
+        font-size: 2.35em;
     }
     .project-name, .project-role,  .project-tools{
-        font-size: 1.5em;
-    }
-    .read-more{
-        font-size: 2em;
+        font-size: 3.53em;
     }
     h2 ul{
-        font-size: 0.4em;
+        font-size: 2.35em;
     }
 }
 
@@ -76,27 +79,24 @@
         background-color: white;
     }*/    
     h1, h2{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .project-title{
-        font-size: 2em;
+        font-size: 2.5em;
     }
-    h3, h4, p{
-        font-size: 1.2em;
-    }    
-    .bio, li{
-        font-size: 1.5em;
+    h3, h4, p, li{
+        font-size: 1.77em;
+    }
+    .bio{
+        font-size: 1.47em;
     }
     .project-name, .project-role, .project-tools{
-        font-size: 1em;
-    }
-    .read-more{
-        font-size: 1.5em;
+        font-size: 2.21em;
     }
     .project-img-smaller-wide img{
         max-width: 50%;
     }
     h2 ul{
-        font-size: 0.5em;
+        font-size: 1.47em;
     }
 }
