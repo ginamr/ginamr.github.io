@@ -1,0 +1,58 @@
+/* Navigation styles */
+
+/* apply to nav and nav li's */
+nav{
+    position: fixed;
+    top: 0;
+    width:100%;
+    overflow: hidden;
+    margin: 0em;
+    background-color: rgba(0, 50, 255, 0.2);
+}
+#first-section{
+    margin-top: 6.5em;
+}
+body nav ul{
+    padding: 0em;
+    margin: 0em;
+    list-style-type: none;
+    overflow: hidden;
+}
+body nav li{
+    float: left;
+    display: block;
+    background: #2ecc71;/*#6C7A89;*/
+    margin-top: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    border-radius: 10em;
+    text-align: center;
+    list-style: none;
+}
+body nav li:hover {
+    background-color: #F5D76E;
+    animation-name: bubbles;
+    animation-duration: 0.5s;
+}
+body nav li a{
+    text-decoration: none;
+}
+/* G logo needs a white background */
+body nav li img{
+    background: white;
+    margin: 0em;
+    overflow: hidden;
+}
+#logo{
+    border: 0.25em solid white;
+    background: white;
+    margin: 0.5em;
+    padding: 0em;
+    overflow: hidden;    
+}
+#logo:hover{
+    border: 0.25em solid #F5D76E;
+    animation-name: bubbles;
+    animation-duration: 0.5s;
+}
