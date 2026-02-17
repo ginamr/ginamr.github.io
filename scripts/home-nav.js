@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <ul>
                 <li id="logo">
                     <a href="index.html">
-                        <img class="icon" src="assets/gr.svg" alt="GR" style="float: right;">
+                        <img class="icon" src="../assets/gr.svg" alt="GR" style="float: right;">
                     </a>
                 </li>
                 <li><a href="pages/teams-ai.html">Teams AI</a></li>
