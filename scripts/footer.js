@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const footerHTML = `
         <footer>
-            <div id="email" class="project-img">
+            <div id="email">
                 <img src="${pathPrefix}assets/email.png" alt="helloginarobinson at gmail dot com">
             </div>
             <p>toginarobinson at gmail dot com</p>
