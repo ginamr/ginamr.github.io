@@ -218,6 +218,14 @@ class ProjectsCarousel extends HTMLElement {
                 });
             }
 
+            // Manually set up carousel indicators (they won't work via data-bs-target in Shadow DOM)
+            const indicators = this.shadowRoot.querySelectorAll('.carousel-indicators [data-bs-target]');
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    this.projectCarousel.to(index);
+                });
+            });
+
             // Update height after slide transition completes
             carousel.addEventListener('slid.bs.carousel', this.slideHandler);
 
