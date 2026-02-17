@@ -71,7 +71,9 @@ code{
 }
 
 #email{
+    width: 100%;
     max-width: 5em;
+    margin: 0 auto;
 }
 
 #alien{
