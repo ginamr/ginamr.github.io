@@ -3,6 +3,10 @@
     from {background-color: #FFFFFF;}
     to {background-color: #F5D76E;}
 }
+@keyframes contentBubbles {
+    from {background-color: #FFFFFF;}
+    to {background-color: #f5e6b0;}
+}
 @keyframes wiggle {
     0% {transform: rotate(1deg);}
     50% {transform: rotate(-1deg);}
@@ -30,14 +34,12 @@
     cursor: pointer;
     box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
 }
-
 .content-link:visited {
     color: #800080;
     background-color: rgba(253, 233, 249, 0.9);
     outline: 0.2em solid rgba(253, 233, 249, 0.9);
     outline-offset: 0.2em;
 }
-
 .content-link:hover {
     color: #0000FF;
     background-color: #f5e6b0;
@@ -45,16 +47,14 @@
     text-decoration: none;
     transform: translateY(-0.1em);
     box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
-    animation-name: bubbles;
+    animation-name: contentBubbles;
     animation-duration: 0.5s;
 }
-
 .content-link:active {
     color: #003171;
     background-color: #ffffff;
     transform: translateY(0em);
 }
-
 .content-link:focus {
     outline: 2px solid #f5e6b0;
     outline-offset: 2px;
@@ -163,6 +163,7 @@ section, footer{
     animation-name: bubbles;
     animation-duration: 0.5s;
 }
+
 /* Bubble text list styling for skills/abilities lists */
 .bubble-list {
     list-style-type: none;
