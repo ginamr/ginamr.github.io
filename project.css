@@ -82,7 +82,6 @@ img {
 #projectsCarousel .carousel-inner {
     background-color: #2980b9;
     border-radius: 1em;
-    min-height: 35em;
 }
 
 #projectsCarousel .carousel-item {
