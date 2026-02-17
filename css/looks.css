@@ -1,3 +1,8 @@
+/* CSS Layers - Define order (bootstrap loads first, custom has priority) */
+@layer bootstrap, custom;
+
+@layer custom {
+
 /* keyframes animations */
 @keyframes bubbles {
     from {background-color: #FFFFFF;}
@@ -180,3 +185,5 @@ li:hover {
     box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
     width: 100%;
 }
+
+} /* End of @layer custom */
