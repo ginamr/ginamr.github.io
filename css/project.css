@@ -21,16 +21,23 @@
     margin: 0em auto;
 }
 .project-img img {
+    max-width: 100%;
     max-height: 15em;
+    height: auto;
+    width: auto;
+    object-fit: contain;
 }
 .project-img-smaller-wide img{
     display: block;    
     background-color: black;
     text-align: left;
     float: center;
-    width: 60%;
+    max-width: 60%;
     min-width: 8em;
     max-height: 20em;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     overflow: hidden;
     margin: 0em auto;
     padding: 1em;
@@ -40,16 +47,19 @@
     background-color: black;
     text-align: left;
     float: center;
-    width: 35%;
+    max-width: 35%;
     min-width: 3em;
     max-width: 6em;
     max-height: 12em;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     overflow: hidden;
     margin: 0em auto;
     padding: 1em;
 }
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .project-content {
@@ -72,9 +82,11 @@ img {
     border: 0.1em solid #bbc3cc;
     border-radius: 1em;
 }
-#shrink-img{
-    width: 10%;
+.project-img-small {
+    max-width: 10%;
     min-width: 5em;
+    width: auto;
+    height: auto;
 }
 
 /* Carousel Styles */
