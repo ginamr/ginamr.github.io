@@ -9,6 +9,7 @@
     padding: 0.25em;
     background: #0067c5;
     border: 0.1em solid #bbc3cc;
+    font-size: 1.5em;
 }
 .project-img {
     display: block;    
@@ -43,7 +44,7 @@
     padding: 1em;
 }
 .project-img-smaller-narrow img{
-    display: block;    
+    display: block;
     background-color: black;
     text-align: left;
     float: center;
@@ -65,6 +66,7 @@ img {
 .project-content {
     text-align: left;
     min-width: 8em;
+    font-size: 1em;
 }
 .project-name{
     background-color: #1f3a93;
@@ -81,6 +83,7 @@ img {
     margin-top:0.5em;
     border: 0.1em solid #bbc3cc;
     border-radius: 1em;
+    font-size: 1em;
 }
 .project-img-small {
     max-width: 10%;

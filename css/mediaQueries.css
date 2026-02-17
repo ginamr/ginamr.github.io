@@ -12,8 +12,8 @@
     .project-title{
         font-size: 1.5em;
     }
-    .read-more, .project-name, .project-role, .project-tools{
-        font-size: 1.2em;
+    .project-name, .project-role, .project-tools, .read-more{
+        font-size: 0.95em;
     }
     h2 ul{
         font-size: 0.7em;
@@ -34,11 +34,8 @@
     .project-title{
         font-size: 1.7em;
     }
-    .project-name, .project-role, .project-tools{
-        font-size: 1.3em;
-    }
-    .read-more{
-        font-size: 1.7em;
+    .project-name, .project-role, .project-tools, .read-more{
+        font-size: 1.1em;
     }
     h2 ul{
         font-size: 0.5em;
@@ -59,11 +56,8 @@
     h3, h4, p, .bio, li{
         font-size: 1.5em;
     }
-    .project-name, .project-role,  .project-tools{
-        font-size: 1.5em;
-    }
-    .read-more{
-        font-size: 2em;
+    .project-name, .project-role, .project-tools, .read-more{
+        font-size: 1.3em;
     }
     h2 ul{
         font-size: 0.4em;
@@ -87,11 +81,8 @@
     .bio, li{
         font-size: 1.5em;
     }
-    .project-name, .project-role, .project-tools{
-        font-size: 1em;
-    }
-    .read-more{
-        font-size: 1.5em;
+    .project-name, .project-role, .project-tools, .read-more{
+        font-size: 1.3em;
     }
     .project-img-smaller-wide img{
         max-width: 50%;
