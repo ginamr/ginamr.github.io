@@ -100,13 +100,13 @@ img {
     font-size: 1.5em;
 }
 .project-name{
-    background-color: #17d2c4;
+    background-color: #003747;
 }
 .project-role{
-    background-color: #2af4e5;
+    background-color: #046276;
 }
 .project-tools{
-    background-color: #4efff2;
+    background-color: #06768d;
 }
 .project-name, .project-role, .project-tools{
     margin-top:0.5em;
