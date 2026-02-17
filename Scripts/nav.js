@@ -1,18 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Detect if we're in the pages folder or at root
+    const isInPagesFolder = window.location.pathname.includes('/pages/');
+    const pathPrefix = isInPagesFolder ? '../' : '';
+    
     const navHTML = `
         <nav>
             <ul>
                 <li id="logo">
-                    <a href="index.html">
-                        <img class="icon" src="Assets/gr.svg" alt="GR" style="float: right;">
+                    <a href="${pathPrefix}index.html">
+                        <img class="icon" src="${pathPrefix}Assets/gr.svg" alt="GR" style="float: right;">
                     </a>
                 </li>
-                <li><a href="teams-ai.html">Teams AI</a></li>
-                <li><a href="cosmos-db.html">Cosmos DB</a></li>
-                <li><a href="MS2017.html">MS 2017</a></li>
-                <li><a href="MS2016.html">MS 2016</a></li>
-                <li><a href="fablix.html">Fablix</a></li>
-                <li><a href="bailys-beads.html">Baily's Beads</a></li>
+                <li><a href="${pathPrefix}${isInPagesFolder ? '' : 'pages/'}teams-ai.html">Teams AI</a></li>
+                <li><a href="${pathPrefix}${isInPagesFolder ? '' : 'pages/'}cosmos-db.html">Cosmos DB</a></li>
+                <li><a href="${pathPrefix}${isInPagesFolder ? '' : 'pages/'}MS2017.html">MS 2017</a></li>
+                <li><a href="${pathPrefix}${isInPagesFolder ? '' : 'pages/'}MS2016.html">MS 2016</a></li>
+                <li><a href="${pathPrefix}${isInPagesFolder ? '' : 'pages/'}fablix.html">Fablix</a></li>
+                <li><a href="${pathPrefix}${isInPagesFolder ? '' : 'pages/'}bailys-beads.html">Baily's Beads</a></li>
             </ul>
         </nav>
     `;
