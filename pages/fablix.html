@@ -2,14 +2,13 @@
 <html>
 <head>
     <script src="../scripts/motion.js"></script>
-    
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Libre+Baskerville|Permanent+Marker" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/looks.css">
     <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="../css/mediaQueries.css">
-      <title>Fablix - Gina Marie Robinson</title>
+    <title>Fablix - Gina Marie Robinson</title>
 </head>
 <body>
     <script src="../scripts/nav.js"></script>
@@ -24,7 +23,12 @@
                 <a href="../assets/Fablix/CS122B-overview-2017-spring.png"><img src="../assets/Fablix/CS122B-overview-2017-spring.png" alt="full stack implementation diagram"></a>
             </div>
             <h2 style="clear: left;">@UCI</h2>
-            <p>At UCI I took Projects in Databases and Web Applications. I worked with two other students for ten weeks on a full-stack movie e-commerce website. The site enabled users to purchase and search for movies. As the DBA, I took responsibility for parsing the XML movie data and maintaining information about each movie and creating end points for my team's JavaScript to easily interact with the database. 
+            <p>At UCI I took Projects in Databases and Web Applications.</p>
+            <p>I worked with two other students for ten weeks on a full-stack movie e-commerce website.</p>
+            <p>The site enabled users to purchase and search for movies.</p>
+            <p>As the DBA, I took responsibility for parsing the XML movie data and maintaining information about each movie and creating end points for my team's JavaScript to easily interact with the database.</p>
+
+            <div class="project-container">
             <h2>My Database Tables</h2> 
                 <ul class="bubble-list">
                     <li>Credit Cards</li>
@@ -36,6 +40,9 @@
                     <li>Sales</li>
                     <li>Stars in Movies</li>
                 </ul> 
+            </div>
+
+            <div class="project-container">
             <h2>My Table Indicies</h2> 
                 <ul class="bubble-list">
                     <li>Credit Cards: primary key only</li>
@@ -46,21 +53,26 @@
                     <li>Movies: title</li>
                     <li>Sales: customer_id and movie_id</li>
                     <li>Stars in Movies: movie_id</li>
-                </ul> 
+                </ul>
+            </div>
+
+            <div class="project-container">
             <h2>My Stored Procedures<h2> 
                 <ul class="bubble-list">
                     <li>doesStarsExist - checks if a given star is in the movie database(DB)</li>
                     <li>getXStars - selects the top given number of stars from the DB</li>
-                    <li>insertG - inserts a genre into the movie DB</li>                
+                    <li>insertG - inserts a genre into the movie DB</li>
                     <li>insertM - inserts a movie into the movie DB</li>
                     <li>insertPairStarMovie - inserts a given movie and actor into the database together</li>
                     <li>search - queries DB for a movie given any of its attributes</li>
                     <li>searchByDirector - queries DB for a movie given a director name</li>
                     <li>searchByStarName - queries DB for a movie given a movie star name (given first name, last name, or both)</li>
-                    <li>searchByTitle - queries DB for a movie given a title (given part of the title or the entire title) </li>
+                    <li>searchByTitle - queries DB for a movie given a title (given part of the title or the entire title)</li>
                     <li>searchByYear - queries DB for a movie given a year</li>
                     <li>verifyCustomer - verifies user login credentials for login page</li>
                 </ul>
+            </div>
+
         </div>
     </section>
 
