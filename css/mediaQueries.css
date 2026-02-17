@@ -9,8 +9,11 @@
     h3, h4{
         font-size: 1.5em;
     }
-    p, .bio, li{
+    p, li{
         font-size: 1.4em;
+    }
+    .bio{
+        font-size: 1.2em;
     }
     section{
         margin: 1em;
@@ -43,8 +46,11 @@
     h3, h4{
         font-size: 1.8em;
     }
-    p, .bio, li{
+    p, li{
         font-size: 1.5em;
+    }
+    .bio{
+        font-size: 1.3em;
     }
     section{
         margin: 1em;
@@ -77,8 +83,11 @@
     h3, h4{
         font-size: 1.9em;
     }
-    p, .bio, li{
+    p, li{
         font-size: 1.6em;
+    }
+    .bio{
+        font-size: 1.4em;
     }
     section{
         margin: 1em;
@@ -111,8 +120,11 @@
     h3, h4{
         font-size: 2.0em;
     }
-    p, .bio, li{
+    p, li{
         font-size: 1.8em;
+    }
+    .bio{
+        font-size: 1.5em;
     }
     section{
         margin: 1em;
