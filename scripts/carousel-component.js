@@ -179,7 +179,7 @@ class ProjectsCarousel extends HTMLElement {
                 .project-content {
                     text-align: left;
                     min-width: 8em;
-                    font-size: 1.25em;
+                    font-size: 1.5em;
                 }
                 
                 .project-name {
