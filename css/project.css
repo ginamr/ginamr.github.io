@@ -28,6 +28,21 @@
     width: auto;
     object-fit: contain;
 }
+.project-img-taller img{
+    display: block;
+    background-color: black;
+    text-align: left;
+    float: center;
+    max-width: 35%;
+    min-width: 5em;
+    max-height: 28em;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 0em auto;
+    padding: 1em;
+}
 .project-img-smaller-wide img{
     display: block;
     background-color: black;
