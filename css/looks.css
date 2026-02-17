@@ -25,7 +25,7 @@
     padding: 0.3em 0.8em;
     margin: 0.2em;
     border-radius: 1.5em;
-    border: 2px solid #003171;
+    border: 0.2em solid #003171;
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
@@ -34,11 +34,13 @@
 .content-link:visited {
     color: #800080;
     background-color: rgba(253, 233, 249, 0.9);
+    outline: 0.2em solid rgba(253, 233, 249, 0.9);
+    outline-offset: 0.2em;
 }
 
 .content-link:hover {
-    color: #2ecc71;
-    background-color: #ffffff;
+    color: #0000FF;
+    background-color: #f5e6b0;
     border-color: #003171;
     text-decoration: none;
     transform: translateY(-0.1em);
@@ -54,7 +56,7 @@
 }
 
 .content-link:focus {
-    outline: 2px solid #F5D76E;
+    outline: 2px solid #f5e6b0;
     outline-offset: 2px;
 }
 
