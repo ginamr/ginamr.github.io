@@ -2,11 +2,107 @@ class ProjectsCarousel extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
+        
+        // Project data
+        this.projects = [
+            {
+                title: 'Teams AI - Agentic AI Development @Microsoft',
+                url: 'pages/teams-ai.html',
+                image: 'assets/Logos/copilot-logo-500.svg',
+                project: 'Teams Channel Agent & Personal CoPilot AI Experiences',
+                role: 'Software Engineer II - AI Agent End to End Development (2024-Present)',
+                tools: 'C# + TypeScript + KQL',
+                label: 'Teams AI'
+            },
+            {
+                title: 'Azure Cosmos DB - Query Engine Development @Microsoft',
+                url: 'pages/cosmos-db.html',
+                image: 'assets/Logos/azure-cosmos-db.svg',
+                project: 'Query Charge Model, System Functions, and Database Features',
+                role: 'Software Engineer II - Database Query Engine Development (2018-2024)',
+                tools: 'C# + C++ + KQL + SQL + JSON',
+                label: 'Azure Cosmos DB'
+            },
+            {
+                title: 'Dynamically Linked Library - Automated Query Plan Analysis @Microsoft',
+                url: 'pages/MS2017.html',
+                image: 'assets/MS-ninjacat.png',
+                project: 'Automated Query Plan Analysis for Query Plan Troubleshooting',
+                role: 'Developer University Internship Summer 2017',
+                tools: 'C# + SQL Server Management Studio + CSHTML/ASP.NET',
+                label: 'Query Plan Analysis'
+            },
+            {
+                title: 'Data Analytics @Microsoft',
+                url: 'pages/MS2016.html',
+                image: 'assets/MS-team2016.jpg',
+                project: 'Database Experimentation Assistant Graph Feature - Customer Query Workload Analysis',
+                role: 'Developer/Program Manager Explorer Internship Summer 2016',
+                tools: 'R Studio + C# + SQL + SQL Server',
+                label: 'Data Analytics'
+            },
+            {
+                title: 'Full Stack ECommerce Web Site @UCI',
+                url: 'pages/fablix.html',
+                image: 'assets/fablix.svg',
+                project: 'Fablix - A Full Stack ECommerce Website',
+                role: 'Database Administrator (DBA), Website Developer, and Android App Developer',
+                tools: 'MySQL Workbench + Command Line',
+                label: 'Fablix'
+            },
+            {
+                title: 'Video Game Vector Graphics @UCI',
+                url: 'pages/bailys-beads.html',
+                image: 'assets/BailysBeads/Baily\'s Beads Characters_whiteText.png',
+                project: 'Baily\'s Beads - A Solar Eclipse 2D Video Game',
+                role: 'Developer and Asset Creator',
+                tools: 'Unity + Adobe (After Effects, Illustrator, and Premier Pro)',
+                label: 'Baily\'s Beads'
+            }
+        ];
     }
 
     connectedCallback() {
-        // Create the shadow DOM structure with Bootstrap CSS scoped to it
-        this.shadowRoot.innerHTML = `
+        this.shadowRoot.innerHTML = this.createTemplate();
+        this.initCarousel();
+    }
+
+    createTemplate() {
+        const indicators = this.projects.map((_, index) => 
+            `<button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="${index}" 
+                class="${index === 0 ? 'active' : ''}" 
+                ${index === 0 ? 'aria-current="true"' : ''} 
+                aria-label="${this.projects[index].label}"></button>`
+        ).join('');
+
+        const items = this.projects.map((project, index) => 
+            `<div class="carousel-item ${index === 0 ? 'active' : ''}">
+                <a href="${project.url}" class="project-container-link">
+                    <div class="project-container">
+                        <h3 class="project-title">${project.title}</h3>
+                        <div class="project-img">
+                            <img src="${project.image}" alt="">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-name">
+                                <h4>Project:</h4>
+                                <p>${project.project}</p>
+                            </div>
+                            <div class="project-role">
+                                <h4>My Role:</h4>
+                                <p>${project.role}</p>
+                            </div>
+                            <div class="project-tools">
+                                <h4>Tools:</h4>
+                                <p>${project.tools}</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>`
+        ).join('');
+
+        return `
             <style>
                 :host {
                     display: block;
@@ -16,163 +112,10 @@ class ProjectsCarousel extends HTMLElement {
             <link rel="stylesheet" href="css/carousel.css">
             <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Teams AI"></button>
-                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Azure Cosmos DB"></button>
-                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Query Plan Analysis"></button>
-                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3" aria-label="Data Analytics"></button>
-                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="4" aria-label="Fablix"></button>
-                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="5" aria-label="Baily's Beads"></button>
+                    ${indicators}
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="pages/teams-ai.html" class="project-container-link">
-                            <div class="project-container">
-                                <h3 class="project-title">Teams AI - Agentic AI Development @Microsoft</h3>
-                                <div class="project-img">
-                                    <img src="assets/Logos/copilot-logo-500.svg" alt="CoPilot Logo">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-name">
-                                        <h4>Project:</h4>
-                                        <p>Teams Channel Agent & Personal CoPilot AI Experiences</p>
-                                    </div>
-                                    <div class="project-role">
-                                        <h4>My Role:</h4>
-                                        <p>Software Engineer II - AI Agent End to End Development (2024-Present)</p>
-                                    </div>
-                                    <div class="project-tools">
-                                        <h4>Tools:</h4>
-                                        <p>C# + TypeScript + KQL </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="pages/cosmos-db.html" class="project-container-link">
-                            <div class="project-container">
-                                <h3 class="project-title">Azure Cosmos DB - Query Engine Development @Microsoft</h3>
-                                <div class="project-img">
-                                    <img src="assets/Logos/azure-cosmos-db.svg" alt="Azure Cosmos DB Logo">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-name">
-                                        <h4>Project:</h4>
-                                        <p>Query Charge Model, System Functions, and Database Features</p>
-                                    </div>
-                                    <div class="project-role">
-                                        <h4>My Role:</h4>
-                                        <p>Software Engineer II - Database Query Engine Development (2018-2024)</p>
-                                    </div>
-                                    <div class="project-tools">
-                                        <h4>Tools:</h4>
-                                        <p>C# + C++ + KQL + SQL + JSON</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="pages/MS2017.html" class="project-container-link">
-                            <div class="project-container">
-                                <h3 class="project-title">Dynamically Linked Library -  Automated Query Plan Analysis @Microsoft</h3>
-                                <div class="project-img">
-                                    <img src="assets/MS-ninjacat.png" alt="">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-name">
-                                        <h4>Project:</h4>
-                                        <p>Automated Query Plan Analysis for Query Plan Troubleshooting</p>
-                                    </div>
-                                    <div class="project-role">
-                                        <h4>My Role:</h4>
-                                        <p>Developer University Internship Summer 2017</p>
-                                    </div>
-                                    <div class="project-tools">
-                                        <h4>Tools:</h4>
-                                        <p>C# + SQL Server Management Studio + CSHTML/ASP.NET </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <a href="pages/MS2016.html" class="project-container-link">
-                            <div class="project-container">
-                                <h3 class="project-title">Data Analytics @Microsoft</h3>
-                                <div class="project-img">
-                                    <img src="assets/MS-team2016.jpg" alt="">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-name">
-                                        <h4>Project:</h4>
-                                        <p>Database Experimentation Assistant Graph Feature - Customer Query Workload Analysis</p>
-                                    </div>
-                                    <div class="project-role">
-                                        <h4>My Role:</h4>
-                                        <p>Developer/Program Manager Explorer Internship Summer 2016</p>
-                                    </div>
-                                    <div class="project-tools">
-                                        <h4>Tools:</h4>
-                                        <p>R Studio + C# + SQL + SQL Server</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <a href="pages/fablix.html" class="project-container-link">
-                            <div class="project-container">
-                                <h3 class="project-title">Full Stack ECommerce Web Site @UCI</h3>
-                                <div class="project-img">
-                                    <img src="assets/fablix.svg" alt="Fablix">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-name">
-                                        <h4>Project:</h4>
-                                        <p>Fablix - A Full Stack ECommerce Website</p>
-                                    </div>
-                                    <div class="project-role">
-                                        <h4>My Role:</h4>
-                                        <p>Database Administrator (DBA), Website Developer, and Android App Developer</p>
-                                    </div>
-                                    <div class="project-tools">
-                                        <h4>Tools:</h4>
-                                        <p>MySQL Workbench + Command Line</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <a href="pages/bailys-beads.html" class="project-container-link">
-                            <div class="project-container">
-                                <h3 class="project-title">Video Game Vector Graphics @UCI</h3>
-                                <div class="project-img">
-                                    <img src="assets/BailysBeads/Baily's Beads Characters_whiteText.png" alt="Baily's Beads">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-name">
-                                        <h4>Project:</h4>
-                                        <p>Baily's Beads - A Solar Eclipse 2D Video Game</p>
-                                    </div>
-                                    <div class="project-role">
-                                        <h4>My Role:</h4>
-                                        <p>Developer and Asset Creator</p>
-                                    </div>
-                                    <div class="project-tools">
-                                        <h4>Tools:</h4>
-                                        <p>Unity + Adobe (After Effects, Illustrator, and Premier Pro)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    ${items}
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
@@ -185,9 +128,6 @@ class ProjectsCarousel extends HTMLElement {
                 </button>
             </div>
         `;
-
-        // Initialize Bootstrap carousel after shadow DOM is populated
-        this.initCarousel();
     }
 
     initCarousel() {
