@@ -29,4 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Recalculate on window resize
     window.addEventListener('resize', setCarouselHeight);
+
+    // Prevent carousel from interfering with link clicks
+    carousel.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A' || e.target.closest('a')) {
+            e.stopPropagation();
+        }
+    });
 });
