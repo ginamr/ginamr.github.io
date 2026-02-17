@@ -57,12 +57,24 @@ nav{
 nav ul{
     padding: 0em;
     margin: 0em;
+    list-style-type: none;
+    overflow: hidden;
 }
 nav li{
+    float: left;
+    display: block;
     background: #2ecc71;/*#6C7A89;*/
     margin-top: 0.5em;
     padding: 0.5em;
     margin-bottom: 0.5em;
+    margin-left: 1em;
+    border-radius: 10em;
+    text-align: center;
+}
+nav li:hover {
+    background-color: #F5D76E;
+    animation-name: bubbles;
+    animation-duration: 0.5s;
 }
 nav li a{
     text-decoration: none;
