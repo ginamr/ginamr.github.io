@@ -35,7 +35,7 @@
     float: center;
     max-width: 35%;
     min-width: 5em;
-    max-height: 28em;
+    max-height: 20em;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -50,7 +50,7 @@
     float: center;
     max-width: 60%;
     min-width: 8em;
-    max-height: 20em;
+    max-height: 15em;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -65,7 +65,7 @@
     float: none;
     max-width: 60%;
     min-width: 8em;
-    max-height: 20em;
+    max-height: 15em;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -100,18 +100,19 @@ img {
     font-size: 1.5em;
 }
 .project-name{
-    background-color: #1f3a93;
+    background-color: #c1fec4;
 }
 .project-role{
-    background-color: #3a539b;
+    background-color: #98ff9c;
 }
 .project-tools{
-    background-color: #4b77be;
+    background-color: #7dfe81;
 }
 .project-name, .project-role, .project-tools{
+    margin-top:0.5em;
     padding-left:1em;
     padding-right: 1em;
-    margin-top:0.5em;
+    padding: 0.5em 0.5em;
     border: 0.1em solid #bbc3cc;
     border-radius: 1em;
     font-size: 1.5em;
