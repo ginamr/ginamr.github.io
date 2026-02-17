@@ -64,6 +64,7 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
     max-width: 100%;
+    font-size: 62.5%;
 }
 
 code{
