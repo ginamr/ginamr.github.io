@@ -15,6 +15,33 @@
     /*font-family: 'Libre Baskerville', sans-serif; font-weight: 400; */
     font-family: 'Concert One', cursive;
 }
+
+/* Anchor tag styles for links throughout the site */
+a {
+    color: #0000FF; /* Light yellow color for visibility */
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #800080; /* Light pink for visited links */
+}
+
+a:hover {
+    color: #2ecc71; /* Green on hover */
+    text-decoration: none;
+    text-shadow: 0px 0px 8px rgba(46, 204, 113, 0.8);
+}
+
+a:active {
+    color: #FFFFFF; /* White when clicking */
+}
+
+a:focus {
+    outline: 2px solid #F5D76E;
+    outline-offset: 2px;
+}
 html {
     overflow-x: hidden;
     overflow-y: scroll;
