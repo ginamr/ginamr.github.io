@@ -87,12 +87,18 @@ img {
 #projectsCarousel .carousel-item {
     background-color: #2980b9;
     min-height: 35em;
-    pointer-events: none;
 }
 
-#projectsCarousel .carousel-item a,
-#projectsCarousel .carousel-item button {
-    pointer-events: auto;
+#projectsCarousel .project-container-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+#projectsCarousel .project-container-link:hover .project-container {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
 }
 
 #projectsCarousel .carousel-indicators [data-bs-target] {
