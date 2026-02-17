@@ -202,6 +202,22 @@ class ProjectsCarousel extends HTMLElement {
                 ride: 'carousel'
             });
 
+            // Manually set up carousel control buttons (they won't work via data-bs-target in Shadow DOM)
+            const prevBtn = this.shadowRoot.querySelector('.carousel-control-prev');
+            const nextBtn = this.shadowRoot.querySelector('.carousel-control-next');
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    this.projectCarousel.prev();
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    this.projectCarousel.next();
+                });
+            }
+
             // Update height after slide transition completes
             carousel.addEventListener('slid.bs.carousel', this.slideHandler);
 
