@@ -7,6 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img class="icon" src="../assets/gr.svg" alt="GR" style="float: right;">
                     </a>
                 </li>
+                <li class="nav-headshot">
+                    <a href="assets/headshot.jpg">
+                        <img src="assets/headshot.jpg" alt="Gina Marie Robinson headshot">
+                    </a>
+                </li>
+                <li class="nav-social">
+                    <a href="https://www.linkedin.com/in/robinsongina" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="assets/linkedin.png" alt="LinkedIn">
+                    </a>
+                </li>
+                <li class="nav-social">
+                    <a href="https://github.com/ginamr" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="assets/github.png" alt="Github">
+                    </a>
+                </li>
                 <li><a href="pages/teams-ai.html">Teams AI</a></li>
                 <li><a href="pages/cosmos-db.html">Cosmos DB</a></li>
                 <li><a href="pages/MS2017.html">MS 2017</a></li>
