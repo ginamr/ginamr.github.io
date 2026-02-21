@@ -1,16 +1,25 @@
 /* Navigation styles */
 
+:root{
+    --nav-height: 6.5em;
+}
+
 /* apply to nav and nav li's */
 nav{
     position: fixed;
     top: 0;
     width:100%;
-    overflow: hidden;
+    height: var(--nav-height);
+    overflow: visible;
     margin: 0em;
     background-color: rgba(0, 50, 255, 0.2);
 }
 #first-section{
-    margin-top: 6.5em;
+    margin-top: var(--nav-height);
+}
+.nav-shell{
+    height: var(--nav-height);
+    width: 100%;
 }
 nav ul{
     padding: 0em;
@@ -83,6 +92,11 @@ nav li img{
     float: none;
     display: block;
     margin: 0.4em 0em 0em 0em;
+}
+
+.dropdown-menu li a{
+    white-space: nowrap;
+    font-size: 0.9em;
 }
 
 .nav-headshot img{
