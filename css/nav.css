@@ -56,3 +56,16 @@ nav li img{
     animation-name: bubbles;
     animation-duration: 0.5s;
 }
+
+.nav-headshot img{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 0.2em solid white;
+    display: block;
+}
+
+nav .icon{
+    width: 4em;
+    height: 4em;
+}
