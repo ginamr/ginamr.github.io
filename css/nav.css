@@ -1,16 +1,14 @@
 /* Navigation styles */
-
 :root{
-    --nav-height: 6.5em;
+    --nav-height: 10em;
+    aspect-ratio: auto;
 }
-
-/* apply to nav and nav li's */
 nav{
     position: fixed;
     top: 0;
     width:100%;
     height: var(--nav-height);
-    overflow: visible;
+    z-index: 2;
     margin: 0em;
     background-color: rgba(0, 50, 255, 0.2);
 }
@@ -25,17 +23,20 @@ nav ul{
     padding: 0em;
     margin: 0em;
     list-style-type: none;
-    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 nav li{
-    float: left;
-    display: block;
-    background: #2ecc71;/*#6C7A89;*/
-    margin-top: 0.5em;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 1em;
-    border-radius: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    background: #cc2eac;/*#6C7A89;*/
+    margin-left: 0.5em;
+    padding: 0.3em;
+    border-radius: 50%;
     text-align: center;
     list-style: none;
 }
@@ -48,31 +49,47 @@ nav li a{
     text-decoration: none;
 }
 .nav-dropdown-label{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
-/* G logo needs a white background */
 nav li img{
-    background: white;
+    background: #ffffff;
     margin: 0em;
     overflow: hidden;
+    border-radius: 50%;
 }
 #logo{
-    border: 0.25em solid white;
-    background: white;
+    border: 0.25em solid #ffffff;
     margin: 0.5em;
     padding: 0em;
-    overflow: hidden;    
+    overflow: hidden;
 }
 #logo:hover{
     border: 0.25em solid #F5D76E;
     animation-name: bubbles;
     animation-duration: 0.5s;
 }
-
+nav .icon{
+    padding: 0;
+    width: 1.8em;
+    height: 1.8em;
+    display: block;
+}
+.nav-headshot img{
+    width: 1.8em;
+    height: 1.8em;
+    border: 0.15em solid white;
+    display: block;
+}
 .nav-dropdown{
     position: relative;
 }
-
+.nav-dropdown:hover .dropdown-menu{
+    display: block;
+}
 .dropdown-menu{
     display: none;
     position: absolute;
@@ -81,34 +98,14 @@ nav li img{
     padding: 0.2em 0em;
     margin: 0em;
     list-style-type: none;
-    z-index: 10;
+    z-index: 1;
 }
-
-.nav-dropdown:hover .dropdown-menu{
-    display: block;
-}
-
 .dropdown-menu li{
     float: none;
     display: block;
-    margin: 0.4em 0em 0em 0em;
 }
-
 .dropdown-menu li a{
     white-space: nowrap;
-    font-size: 0.9em;
-}
-
-.nav-headshot img{
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    border: 0.2em solid white;
-    display: block;
-}
-
-nav .icon{
-    width: 3em;
-    height: auto;
-    display: block;
+    background-color: #f5896e;
+    border-radius: 10em;
 }
