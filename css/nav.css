@@ -38,6 +38,9 @@ nav li:hover {
 nav li a{
     text-decoration: none;
 }
+.nav-dropdown-label{
+    display: inline-block;
+}
 /* G logo needs a white background */
 nav li img{
     background: white;
@@ -55,6 +58,31 @@ nav li img{
     border: 0.25em solid #F5D76E;
     animation-name: bubbles;
     animation-duration: 0.5s;
+}
+
+.nav-dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.2em 0em;
+    margin: 0em;
+    list-style-type: none;
+    z-index: 10;
+}
+
+.nav-dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu li{
+    float: none;
+    display: block;
+    margin: 0.4em 0em 0em 0em;
 }
 
 .nav-headshot img{
