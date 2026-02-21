@@ -58,15 +58,15 @@ nav li img{
 }
 
 .nav-headshot img{
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     border: 0.2em solid white;
     display: block;
 }
 
 nav .icon{
-    width: 4em;
+    width: 3em;
     height: auto;
     display: block;
 }
