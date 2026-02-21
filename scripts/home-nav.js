@@ -20,12 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img class="icon" src="assets/github.png" alt="Github">
                     </a>
                 </li>
-                <li><a href="pages/teams-ai.html">Teams AI</a></li>
-                <li><a href="pages/cosmos-db.html">Cosmos DB</a></li>
-                <li><a href="pages/MS2017.html">MS 2017</a></li>
-                <li><a href="pages/MS2016.html">MS 2016</a></li>
-                <li><a href="pages/fablix.html">Fablix</a></li>
-                <li><a href="pages/bailys-beads.html">Baily's Beads</a></li>
+                <li class="nav-dropdown">
+                    <span class="nav-dropdown-label" aria-haspopup="true" aria-expanded="false">Projects</span>
+                    <ul class="dropdown-menu" aria-label="Projects">
+                        <li><a href="pages/teams-ai.html">Teams AI</a></li>
+                        <li><a href="pages/cosmos-db.html">Cosmos DB</a></li>
+                        <li><a href="pages/MS2017.html">MS 2017</a></li>
+                        <li><a href="pages/MS2016.html">MS 2016</a></li>
+                        <li><a href="pages/fablix.html">Fablix</a></li>
+                        <li><a href="pages/bailys-beads.html">Baily's Beads</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     `;
