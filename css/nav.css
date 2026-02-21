@@ -67,5 +67,6 @@ nav li img{
 
 nav .icon{
     width: 4em;
-    height: 4em;
+    height: auto;
+    display: block;
 }
