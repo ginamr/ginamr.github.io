@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </a>
                 </li>
                 <li class="nav-headshot">
-                    <a href="assets/headshot.jpg">
-                        <img src="assets/headshot.jpg" alt="Gina Marie Robinson headshot">
-                    </a>
+                    <img src="assets/headshot.jpg" alt="Gina Marie Robinson headshot">
                 </li>
                 <li class="nav-social">
                     <a href="https://www.linkedin.com/in/robinsongina" target="_blank" rel="noopener noreferrer">
