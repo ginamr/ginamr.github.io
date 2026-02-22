@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </a>
                 </li>
                 <li class="nav-headshot">
-                    <a href="${basePath}index.html" aria-label="Gina Marie Robinson">
+                    <a>
                         <img src="${assetsPath}headshot.jpg" alt="Gina Marie Robinson headshot">
                     </a>
                 </li>
