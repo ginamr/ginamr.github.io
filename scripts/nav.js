@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <ul>
                 <li id="logo">
                     <a href="${basePath}index.html" aria-label="Home">
-                        <img class="icon" src="${assetsPath}gr.svg" alt="GR">
+                        <img src="${assetsPath}gr.svg" alt="GR">
                     </a>
                 </li>
                 <li class="nav-headshot">
@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 </li>
                 <li class="nav-social">
                     <a href="https://www.linkedin.com/in/robinsongina" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                        <img class="icon" src="${assetsPath}linkedin.png" alt="LinkedIn">
+                        <img src="${assetsPath}linkedin.png" alt="LinkedIn">
                     </a>
                 </li>
                 <li class="nav-social">
                     <a href="https://github.com/ginamr" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                        <img class="icon" src="${assetsPath}github.png" alt="Github">
+                        <img src="${assetsPath}github.png" alt="Github">
                     </a>
                 </li>
                 <li class="nav-dropdown" tabindex="0" role="button">
