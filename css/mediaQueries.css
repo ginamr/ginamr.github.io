@@ -10,16 +10,10 @@
         height: 2.8em;
         margin: 0 0.3em;
     }
-    
-    nav .icon{
-        width: 2em;
-    }
-    
     .nav-headshot img{
         width: 2em;
         height: 2em;
     }
-    
     .nav-dropdown-label{
         font-size: 0.9rem;
     }
@@ -28,7 +22,6 @@
         min-width: 10em;
         right: -1em;
     }
-    
     .dropdown-menu li a{
         padding: 0.6em 1em;
         font-size: 1.2rem;
@@ -55,6 +48,7 @@
     section{
         margin: 1em;
     }
+
     .project-title{
         font-size: 1.98em;
     }
@@ -84,16 +78,10 @@
         height: 3em;
         margin: 0 0.4em;
     }
-    
-    nav .icon{
-        width: 2.2em;
-    }
-    
     .nav-headshot img{
         width: 2.2em;
         height: 2.2em;
     }
-    
     .nav-dropdown-label{
         font-size: 1rem;
     }
@@ -101,7 +89,6 @@
     .dropdown-menu{
         min-width: 11em;
     }
-    
     .dropdown-menu li a{
         padding: 0.65em 1.1em;
         font-size: 1.3rem;
@@ -128,18 +115,21 @@
     section{
         margin: 1em;
     }
+
     .project-title{
         font-size: 2.14em;
     }
     .project-name, .project-role, .project-tools, .read-more{
         font-size: 1.99em;
     }
+
     h2 ul{
         font-size: 1.99em;
     }
     p ul{
         font-size: 1.57em;
     }
+
     .project-img-smaller-wide img{
         max-width: 50%;
     }
@@ -157,29 +147,22 @@
         height: 3.5em;
         margin: 0 0.5em;
     }
-    
-    nav .icon{
-        width: 2.5em;
-    }
-    
     .nav-headshot img{
         width: 2.5em;
         height: 2.5em;
     }
-    
     .nav-dropdown-label{
         font-size: 1.2rem;
     }
-    
+
     .dropdown-menu{
         min-width: 12em;
     }
-    
     .dropdown-menu li a{
         padding: 0.75em 1.2em;
         font-size: 1.4rem;
     }
-    
+
     h1{
         font-size: 3.83em;
     }
@@ -201,18 +184,21 @@
     section{
         margin: 1em;
     }
+
     .project-title{
         font-size: 2.29em;
     }
     .project-name, .project-role, .project-tools, .read-more{
         font-size: 2.14em;
     }
+
     h2 ul{
         font-size: 2.14em;
     }
     p ul{
         font-size: 1.69em;
     }
+
     .project-img-smaller-wide img{
         max-width: 50%;
     }
@@ -243,18 +229,21 @@
     section{
         margin: 1em;
     }
+
     .project-title{
         font-size: 2.53em;
     }
     .project-name, .project-role, .project-tools, .read-more{
         font-size: 2.36em;
     }
+
     h2 ul{
         font-size: 2.36em;
     }
     p ul{
         font-size: 1.86em;
     }
+
     .project-img-smaller-wide img{
         max-width: 50%;
     }
