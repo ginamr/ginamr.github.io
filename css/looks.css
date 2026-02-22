@@ -1,4 +1,4 @@
-/* keyframes animations */
+/* animations */
 @keyframes bubbles {
     from {background-color: #FFFFFF;}
     to {background-color: #F5D76E;}
@@ -13,13 +13,79 @@
     100% {transform: rotate(1deg);}
 }
 
+/* id selectors for specific elements */
+#email{
+    width: 100%;
+    max-width: 5em;
+    margin: 0 auto;
+}
+
+#alien{
+    width: 30%;
+    max-width: 6em;
+}
+
 /* main css */
-*{
+* {
     color: white;
     font-family: 'Concert One', cursive;
 }
 
-/* Content link styles - use class="content-link" on anchor tags */
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0em;
+    margin: 0em;
+    background-color: #3498db;
+}
+
+header {
+    padding: 1em;
+    margin: 0em;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    animation-name: wiggle;
+    animation-duration: 2s;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+h3, h4, p, .bio, .copyright {
+    font-family: 'Concert One', cursive;
+}
+
+strong {
+    font-family: 'Concert One', cursive;
+    text-shadow: 0px 0.1em black;
+}
+
+/* Section and footer styling */
+footer {
+    text-align:center;
+}
+
+section, footer {
+    padding: 1em;
+    width: 100% auto;
+    margin: 2em;
+    margin-top: 3em;
+    background-color: #2980b9;
+    border-radius: 2em;
+}
+
+/* Content link styles */
 .content-link {
     display: inline-block;
     color: #0000FF;
@@ -31,7 +97,7 @@
     border: 0.2em solid #003171;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
+    box-shadow: 0em 0em 2em #003171;
 }
 .content-link:visited {
     color: #800080;
@@ -45,7 +111,7 @@
     border-color: #003171;
     text-decoration: none;
     transform: translateY(-0.1em);
-    box-shadow: 0em 0em 2em #003171;/*#F5D76E;*/
+    box-shadow: 0em 0em 2em #003171;
     animation-name: contentBubbles;
     animation-duration: 0.5s;
 }
@@ -57,115 +123,6 @@
 .content-link:focus {
     outline: 2px solid #f5e6b0;
     outline-offset: 2px;
-}
-
-html {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    max-width: 100%;
-    font-size: 62.5%;
-}
-
-code{
-    font-family:courier;
-}
-
-#email{
-    width: 100%;
-    max-width: 5em;
-    margin: 0 auto;
-}
-
-#alien{
-    width: 30%;
-    max-width: 6em;
-}
-
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-    padding: 0em;
-    margin: 0em;
-    background-color: #3498db;/*#03C9A9;*/
-    /* #8fc951 = (143,201,81) RGB
-       #6C7A89 gray #03C9A9 green
-    */
-    animation-name: background;
-    animation-duration: 3s;
-}
-
-header{
-    padding: 1em;
-    margin: 0em;
-}
-
-h1{
-    font-family: 'Permanent Marker', cursive;
-    animation-name: wiggle;
-    animation-duration: 2s;
-}
-
-h2{
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-}
-
-h3, h4, p, .bio, .copyright{
-    font-family: 'Concert One', cursive;
-}
-
-strong{
-    font-family: 'Concert One', cursive;
-    text-shadow: 0px 0.1em black;/*#003171;*//*#6C7A89;*/
-}
-
-.headshot{
-    width: 33%;
-    min-width: 5em;
-    max-width: 10em;
-    overflow: hidden;    
-    margin-bottom: 1em;
-    margin-left: 2em;
-    margin-right: 1em;
-    border: 0.25em solid white;
-    float: left;
-}
-
-footer{
-    text-align:center;
-}
-
-section, footer{
-    padding: 1em;
-    width: 100% auto;
-    margin: 2em;
-    margin-top: 3em;
-    background-color: #2980b9;
-    border-radius: 2em;
-}
-
-/* Social media bubble list styling */
-.social-links{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-} 
-.social-links li {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 0.5em;
-    margin-left: 1em;
-    text-decoration: none;
-    border-radius: 10em;
-    background-color: white;
-}
-.social-links li:hover {
-    background-color: #F5D76E; /*#2ecc71*/
-    animation-name: bubbles;
-    animation-duration: 0.5s;
 }
 
 /* Bubble text list styling for skills/abilities lists */
@@ -192,16 +149,11 @@ section, footer{
     animation-duration: 0.5s;
 }
 
-.icon {
-    padding: 5px;
-    width: 3em;
-    height: auto;
-}
-
-.scrollToTop{
+/* Scroll to top button */
+.scrollToTop {
     float: center;
-    display : block;
-    width   : 10em;
+    display: block;
+    width: 10em;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -215,7 +167,6 @@ section, footer{
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
 .scrollToTop:hover {
     background-color: #45a049;
     border-color: #45a049;
