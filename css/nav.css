@@ -15,7 +15,7 @@ nav{
 }
 
 #first-section{
-    margin-top: var(--nav-height);
+    margin-top: calc(var(--nav-height) + 9em);
 }
 
 /* Nav container */
@@ -35,12 +35,11 @@ nav li{
     justify-content: center;
     width: 2em;
     height: 2em;
-    border-radius: 4em;
+    border-radius: 1em;
     overflow: hidden; 
 }
 nav li:hover{
     background-color: #F5D76E;
-    animation: bubbles 0.5s;
 }
 
 /* Focus states for accessibility */
@@ -55,6 +54,9 @@ nav li a:focus{
 .nav-headshot {
     background: transparent;
 }
+.nav-headshot:hover {
+    background: transparent;
+}
 .nav-headshot img {
     object-fit: cover; /* Ensures the container is filled */
     object-position: center; /* Centers the visible part of the image */
@@ -65,18 +67,22 @@ nav li a:focus{
 
 /* Logo */
 #logo {
-    background: white;
+    background: transparent;
 }
 #logo:hover {
     border-color: #F5D76E;
+    background: #F5D76E;
 }
 #logo img {
-    width: 2em;
-    height: 2em;
-    border-radius: 0.5em;
-    object-fit: contain; /* Ensures the container is filled */
+    width: 1.75em;
+    height: 1.75em;
+    padding: 0.5em;
+    border-radius: 1.75em;
+    object-fit: cover; /* Ensures the container is filled */
     object-position: center; /* Centers the visible part of the image */
     background: rgb(255, 255, 255);
+    border: 0.1em solid #ffffff;
+    overflow: visible; 
 }
 
 /* Social icons */
@@ -170,7 +176,6 @@ nav li a:focus{
 .dropdown-menu li {
     display: list-item;
     background: white;
-
     width: 100%;
     height: auto;
     margin: 0;
@@ -179,8 +184,6 @@ nav li a:focus{
     pointer-events: auto;
 }
 .dropdown-menu li a {
-    background: white;
-
     display: block;
     width: 100%;
     padding: 0.75em 1.2em;
