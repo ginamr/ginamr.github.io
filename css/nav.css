@@ -33,14 +33,10 @@ nav li{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5em;
-    height: 2.5em;
-    padding: 0;
-    background: #cc2ea4;
-    border-radius: 3em;
+    width: 2em;
+    height: 2em;
+    border-radius: 4em;
     overflow: hidden; 
-    border: 2px solid red;
-
 }
 nav li:hover{
     background-color: #F5D76E;
@@ -57,20 +53,19 @@ nav li a:focus{
 
 /* Headshot */
 .nav-headshot {
-    background: #4b1de0;
+    background: transparent;
 }
 .nav-headshot img {
     object-fit: cover; /* Ensures the container is filled */
     object-position: center; /* Centers the visible part of the image */
-    overflow: visible; 
-
+    border-radius: 0.5em;
     width: 2.5em;
     height: 2.5em;
 }
 
 /* Logo */
 #logo {
-    background: rgb(255, 255, 255);
+    background: white;
 }
 #logo:hover {
     border-color: #F5D76E;
@@ -78,6 +73,7 @@ nav li a:focus{
 #logo img {
     width: 2em;
     height: 2em;
+    border-radius: 0.5em;
     object-fit: contain; /* Ensures the container is filled */
     object-position: center; /* Centers the visible part of the image */
     background: rgb(255, 255, 255);
@@ -85,16 +81,16 @@ nav li a:focus{
 
 /* Social icons */
 .nav-social {
-    background: #2ecc71;
+    background: transparent;
 }
 .nav-social img {
-    background: #cc822e;
+    width: 2em;
+    height: 2em;
     object-fit: cover; /* Ensures the container is filled */
     object-position: center; /* Centers the visible part of the image */
-    overflow: hidden;
-
-    width: 2.5em;
-    height: 2.5em;
+    border-radius: 10em;
+    border: 2px solid #ffffff;
+    background: rgb(255, 255, 255);
 }
 
 /* Dropdown container */
@@ -106,6 +102,7 @@ nav li a:focus{
     width: auto;
     min-width: 5em;
     padding: 0 1.5em;
+    overflow: visible;
 }
 .nav-dropdown-label {
     display: flex;
@@ -172,15 +169,18 @@ nav li a:focus{
 }
 .dropdown-menu li {
     display: list-item;
+    background: white;
+
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
-    background: transparent;
     box-sizing: border-box;
     pointer-events: auto;
 }
 .dropdown-menu li a {
+    background: white;
+
     display: block;
     width: 100%;
     padding: 0.75em 1.2em;
