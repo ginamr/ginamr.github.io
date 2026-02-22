@@ -1,5 +1,39 @@
 /* Smallest, Phones */
 @media screen and (max-width: 479px) {
+    /* Navigation adjustments */
+    :root{
+        --nav-height: 5em;
+    }
+    
+    nav li{
+        width: 2.8em;
+        height: 2.8em;
+        margin: 0 0.3em;
+    }
+    
+    nav .icon{
+        width: 2em;
+    }
+    
+    .nav-headshot img{
+        width: 2em;
+        height: 2em;
+    }
+    
+    .nav-dropdown-label{
+        font-size: 0.9rem;
+    }
+    
+    .dropdown-menu{
+        min-width: 10em;
+        right: -1em;
+    }
+    
+    .dropdown-menu li a{
+        padding: 0.6em 1em;
+        font-size: 1.2rem;
+    }
+    
     h1{
         font-size: 3.30em;
     }
@@ -40,6 +74,39 @@
 
 /* Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
+    /* Navigation adjustments */
+    :root{
+        --nav-height: 5.5em;
+    }
+    
+    nav li{
+        width: 3em;
+        height: 3em;
+        margin: 0 0.4em;
+    }
+    
+    nav .icon{
+        width: 2.2em;
+    }
+    
+    .nav-headshot img{
+        width: 2.2em;
+        height: 2.2em;
+    }
+    
+    .nav-dropdown-label{
+        font-size: 1rem;
+    }
+    
+    .dropdown-menu{
+        min-width: 11em;
+    }
+    
+    .dropdown-menu li a{
+        padding: 0.65em 1.1em;
+        font-size: 1.3rem;
+    }
+    
     h1{
         font-size: 3.56em;
     }
@@ -80,6 +147,39 @@
 
 /* Medium Devices, Desktops */
 @media screen and (min-width: 992px) {
+    /* Navigation adjustments */
+    :root{
+        --nav-height: 6em;
+    }
+    
+    nav li{
+        width: 3.5em;
+        height: 3.5em;
+        margin: 0 0.5em;
+    }
+    
+    nav .icon{
+        width: 2.5em;
+    }
+    
+    .nav-headshot img{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    .nav-dropdown-label{
+        font-size: 1.2rem;
+    }
+    
+    .dropdown-menu{
+        min-width: 12em;
+    }
+    
+    .dropdown-menu li a{
+        padding: 0.75em 1.2em;
+        font-size: 1.4rem;
+    }
+    
     h1{
         font-size: 3.83em;
     }
@@ -120,6 +220,8 @@
 
 /* Large Devices, Wide Screens */
 @media screen and (min-width: 1200px) {
+    /* Navigation stays at default size from nav.css */
+    
     h1{
         font-size: 4.22em;
     }
